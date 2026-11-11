@@ -51,3 +51,32 @@ test('extractChannelId findet die Kanal-ID in einer Kanalseite', () => {
   assert.equal(extractChannelId(`var x = {"externalId":"${id}","other":1}`), id);
   assert.equal(extractChannelId('<html>nichts</html>'), null);
 });
+
+test('parsePodcast liest Titel, Datum, Seite und Audiodatei', async () => {
+  const { parsePodcast } = await import('../scripts/fetch-icf.mjs');
+  const xml = `<rss><channel><title>Beispiel</title>
+  <item>
+    <title><![CDATA[Mut zum Aufbruch | Vorname Name]]></title>
+    <link>https://example.org/predigten/mut-zum-aufbruch/</link>
+    <pubDate>Sun, 08 Nov 2026 12:00:00 +0000</pubDate>
+    <description><![CDATA[<p>Eine <b>Predigt</b> &amp; mehr</p>]]></description>
+    <enclosure url="https://example.org/audio/1.mp3?x=1&amp;y=2" length="123" type="audio/mpeg"/>
+    <itunes:duration>00:41:07</itunes:duration>
+  </item>
+  <item><title>Ohne Datum</title></item>
+  <item>
+    <title>Nur Titel &amp; Datum</title>
+    <pubDate>Sun, 01 Nov 2026 12:00:00 +0000</pubDate>
+  </item>
+  </channel></rss>`;
+  assert.deepEqual(parsePodcast(xml), [
+    {
+      title: 'Mut zum Aufbruch | Vorname Name',
+      published: '2026-11-08T12:00:00.000Z',
+      link: 'https://example.org/predigten/mut-zum-aufbruch/',
+      audio: 'https://example.org/audio/1.mp3?x=1&y=2',
+      duration: '00:41:07',
+    },
+    { title: 'Nur Titel & Datum', published: '2026-11-01T12:00:00.000Z' },
+  ]);
+});

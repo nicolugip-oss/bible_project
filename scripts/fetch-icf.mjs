@@ -12,6 +12,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'data', 'icf.json');
 const MAX_VIDEOS = 12;
+const MAX_SERMONS = 8;
 const HEADERS = {
   'user-agent': 'Mozilla/5.0 (compatible; bible-app-feed/1.0)',
   'accept-language': 'de-CH,de;q=0.9,en;q=0.5',
@@ -59,6 +60,34 @@ export function parseFeed(xml) {
     videos.push({ id, title: decodeXml(name).trim(), published });
   }
   return { title, videos };
+}
+
+function stripMarkup(text) {
+  return decodeXml(text.replace(/^<!\[CDATA\[([\s\S]*?)\]\]>$/, '$1'))
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/** Liest die Folgen eines Podcast-Feeds (RSS 2.0). */
+export function parsePodcast(xml) {
+  const episodes = [];
+  for (const [, item] of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
+    const tag = (name) => stripMarkup(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`).exec(item)?.[1] || '');
+    const title = tag('title');
+    const date = new Date(tag('pubDate'));
+    if (!title || Number.isNaN(date.getTime())) continue;
+    const audio = decodeXml(/<enclosure[^>]*\surl="([^"]+)"/.exec(item)?.[1] || '');
+    const link = tag('link');
+    episodes.push({
+      title,
+      published: date.toISOString(),
+      ...(/^https:\/\//.test(link) ? { link } : {}),
+      ...(/^https:\/\//.test(audio) ? { audio } : {}),
+      ...(tag('itunes:duration') ? { duration: tag('itunes:duration') } : {}),
+    });
+  }
+  return episodes;
 }
 
 async function get(url) {
@@ -109,6 +138,7 @@ async function main() {
     updated: previous.updated || null,
     channel: { title: config.channel.title, url: config.channel.url, ...(previous.channel?.id ? { id: previous.channel.id } : {}) },
     videos: previous.videos || [],
+    sermons: previous.sermons || [],
     links: config.links,
   };
 
@@ -122,6 +152,30 @@ async function main() {
     console.log(`ICF-Videos: ${JSON.stringify(base.videos)}`);
   } catch (err) {
     console.warn(`ICF: Videoliste nicht aktualisiert – ${err.message}`);
+  }
+
+  if (config.podcast?.feed) {
+    try {
+      const { text } = await get(config.podcast.feed);
+      const episodes = parsePodcast(text);
+      if (!episodes.length) throw new Error('Feed enthält keine Folgen');
+      base.sermons = episodes.slice(0, MAX_SERMONS);
+      console.log(`ICF: Podcast mit ${episodes.length} Folgen. Neueste: ${episodes[0].title}`);
+      console.log(`ICF-Predigten: ${JSON.stringify(base.sermons)}`);
+      console.log(`ICF-Feed-Ausschnitt: ${JSON.stringify((/<item>[\s\S]*?<\/item>/.exec(text)?.[0] || '').slice(0, 2500))}`);
+    } catch (err) {
+      console.warn(`ICF: Predigtliste nicht aktualisiert – ${err.message}`);
+    }
+  }
+
+  // Erreichbarkeit der verlinkten Seiten ins Protokoll schreiben (ändert nichts an der App)
+  for (const link of config.links) {
+    try {
+      const res = await fetch(link.url, { headers: HEADERS, redirect: 'follow', signal: AbortSignal.timeout(15_000) });
+      console.log(`Link ${res.status}: ${link.url}${res.url !== link.url ? ` -> ${res.url}` : ''}`);
+    } catch (err) {
+      console.warn(`Link nicht erreichbar: ${link.url} (${err.message})`);
+    }
   }
 
   await writeFile(OUT, JSON.stringify(base, null, 2) + '\n');

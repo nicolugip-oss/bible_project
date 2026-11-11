@@ -1,10 +1,48 @@
 {
-  "updated": null,
+  "updated": "2026-11-11T14:11:56.000Z",
   "channel": {
     "title": "ICF Zürich",
-    "url": "https://icf.ch/youtube"
+    "url": "https://icf.ch/youtube",
+    "id": "UCzNSY1t9NVOWDfBKukMiGGg"
   },
-  "videos": [],
+  "videos": [
+    {
+      "id": "9TsgyL276Wc",
+      "title": "Hour of Prayer | Du führst mich durch dunkle Täler | ICF Zürich",
+      "published": "2026-11-10T23:38:01+00:00"
+    },
+    {
+      "id": "DcHyaV3rtMA",
+      "title": "Du führst mich durch dunkle Täler | Leo Bigger",
+      "published": "2026-11-08T12:02:27+00:00"
+    },
+    {
+      "id": "NqfR2ryrLwA",
+      "title": "Christmas Experience 2026 | Die einzigartige Weihnachtsshow",
+      "published": "2026-11-05T16:05:59+00:00"
+    },
+    {
+      "id": "3WnNoH_cPIM",
+      "title": "Church Box | Weihnachten im ICF – Adventskalender, Christmas Experience & Mitmach-Weihnachten",
+      "published": "2026-11-04T11:00:06+00:00"
+    },
+    {
+      "id": "DBHQZPteR64",
+      "title": "Hour of Prayer | Er führt mich sicher | ICF Zürich",
+      "published": "2026-11-03T23:39:42+00:00"
+    },
+    {
+      "id": "_jAlD27xJU4",
+      "title": "Er führt mich sicher | Leo Bigger",
+      "published": "2026-11-01T16:09:35+00:00"
+    },
+    {
+      "id": "bL6iyFuAhT0",
+      "title": "Wie lange noch? | Emmanuelle Morier | Ladies Lounge | SE05",
+      "published": "2026-10-31T21:50:29+00:00"
+    }
+  ],
+  "sermons": [],
   "links": [
     {
       "label": "Website von ICF Zürich",
