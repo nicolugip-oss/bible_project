@@ -21,6 +21,9 @@ const toastEl = document.getElementById('toast');
 const streakEl = document.getElementById('streak');
 
 async function getJSON(path) {
+  // Eine eingebettete Vorschau kann die Daten direkt mitliefern.
+  const inline = window.MANNA_DATA?.[path];
+  if (inline) return inline;
   const res = await fetch(path);
   if (!res.ok) throw new Error(`${path}: ${res.status}`);
   return res.json();

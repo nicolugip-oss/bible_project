@@ -859,6 +859,15 @@ input[type="date"] {
   background: var(--surface-2);
 }
 
+.video-frame:empty,
+.videorow-thumb:empty {
+  display: none;
+}
+
+.videorow:has(.videorow-thumb:empty) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .video-frame img,
 .video-frame iframe {
   display: block;
@@ -1120,8 +1129,8 @@ input[type="date"] {
   z-index: 20;
   background: var(--surface);
   border-top: 1px solid var(--line);
-  padding-left: max(8px, env(safe-area-inset-left, 0px));
-  padding-right: max(8px, env(safe-area-inset-right, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 

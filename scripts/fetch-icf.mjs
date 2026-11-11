@@ -119,6 +119,7 @@ async function main() {
     base.channel = { title: feed.title || config.channel.title, url: `https://www.youtube.com/channel/${id}`, id };
     base.videos = feed.videos.slice(0, MAX_VIDEOS);
     console.log(`ICF: Kanal «${base.channel.title}» (${id}), ${base.videos.length} Videos. Neuestes: ${base.videos[0].title}`);
+    console.log(`ICF-Videos: ${JSON.stringify(base.videos)}`);
   } catch (err) {
     console.warn(`ICF: Videoliste nicht aktualisiert – ${err.message}`);
   }
