@@ -2,7 +2,7 @@
 // Strategie: sofort aus dem Zwischenspeicher antworten und im Hintergrund auffrischen.
 // Eine neue Version der App ist damit beim übernächsten Öffnen sichtbar.
 
-const CACHE = 'manna-v1';
+const CACHE = 'manna-v2';
 const CORE = [
   './',
   'index.html',
@@ -10,6 +10,7 @@ const CORE = [
   'js/app.js',
   'js/lib/dates.js',
   'js/lib/dom.js',
+  'js/lib/icf.js',
   'js/lib/memory.js',
   'js/lib/plan.js',
   'js/lib/store.js',

@@ -1,7 +1,7 @@
 {
   "channel": {
     "title": "ICF Zürich",
-    "url": "https://icf.ch/youtube",
+    "url": "https://www.youtube.com/channel/UCzNSY1t9NVOWDfBKukMiGGg",
     "lookup": [
       "https://icf.ch/youtube-de",
       "https://icf.ch/youtube"
@@ -10,20 +10,20 @@
   },
   "links": [
     {
-      "label": "Website von ICF Zürich",
-      "url": "https://icf.church/zuerich"
+      "label": "Alle Predigten",
+      "url": "https://icf.church/zuerich/de/predigten/"
     },
     {
-      "label": "Celebrations: Zeiten und Orte",
-      "url": "https://icf.church/zuerich/celebrations"
+      "label": "Celebration besuchen: Zeiten und Orte",
+      "url": "https://icf.church/zuerich/de/besuchen/"
     },
     {
       "label": "YouTube-Kanal",
-      "url": "https://icf.ch/youtube"
+      "url": "https://www.youtube.com/channel/UCzNSY1t9NVOWDfBKukMiGGg"
     },
     {
-      "label": "Podcast mit den Predigten",
-      "url": "https://icf.church/zuerich/en/podcast"
+      "label": "Website von ICF Zürich",
+      "url": "https://icf.church/zuerich/de/"
     }
   ],
   "podcast": {

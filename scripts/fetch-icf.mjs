@@ -69,22 +69,39 @@ function stripMarkup(text) {
     .trim();
 }
 
+/**
+ * Liest Serie und Kurzbeschreibung aus dem Beschreibungstext einer Predigt.
+ * Aufbau bei ICF Zürich: Untertitel, Satz zur Predigtserie, Zusammenfassung, danach Hinweise in eigener Sache.
+ */
+export function describeSermon(description) {
+  const paragraphs = description.split(/\n\s*\n/).map((p) => p.replace(/\s+/g, ' ').trim()).filter(Boolean);
+  const series = /Predigtserie\s+[«„"“]([^»“”"]{2,80})[»“”"]/.exec(description)?.[1]?.trim();
+  const at = paragraphs.findIndex((p) => /Predigtserie/.test(p));
+  const candidate = at >= 0 ? paragraphs[at + 1] : undefined;
+  const summary = candidate && candidate.length >= 80 && !/https?:\/\//.test(candidate) ? candidate : undefined;
+  return {
+    ...(series ? { series } : {}),
+    ...(summary ? { summary: summary.length > 700 ? `${summary.slice(0, 699).replace(/\s+\S*$/, '')} …` : summary } : {}),
+  };
+}
+
 /** Liest die Folgen eines Podcast-Feeds (RSS 2.0). */
 export function parsePodcast(xml) {
   const episodes = [];
   for (const [, item] of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
-    const tag = (name) => stripMarkup(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`).exec(item)?.[1] || '');
+    const raw = (name) => new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`).exec(item)?.[1] || '';
+    const tag = (name) => stripMarkup(raw(name));
     const title = tag('title');
     const date = new Date(tag('pubDate'));
     if (!title || Number.isNaN(date.getTime())) continue;
     const audio = decodeXml(/<enclosure[^>]*\surl="([^"]+)"/.exec(item)?.[1] || '');
-    const link = tag('link');
+    const description = decodeXml(raw('description').replace(/^\s*<!\[CDATA\[([\s\S]*?)\]\]>\s*$/, '$1')).replace(/<[^>]+>/g, '');
     episodes.push({
       title,
       published: date.toISOString(),
-      ...(/^https:\/\//.test(link) ? { link } : {}),
       ...(/^https:\/\//.test(audio) ? { audio } : {}),
       ...(tag('itunes:duration') ? { duration: tag('itunes:duration') } : {}),
+      ...describeSermon(description),
     });
   }
   return episodes;
@@ -149,7 +166,6 @@ async function main() {
     base.channel = { title: feed.title || config.channel.title, url: `https://www.youtube.com/channel/${id}`, id };
     base.videos = feed.videos.slice(0, MAX_VIDEOS);
     console.log(`ICF: Kanal «${base.channel.title}» (${id}), ${base.videos.length} Videos. Neuestes: ${base.videos[0].title}`);
-    console.log(`ICF-Videos: ${JSON.stringify(base.videos)}`);
   } catch (err) {
     console.warn(`ICF: Videoliste nicht aktualisiert – ${err.message}`);
   }
@@ -161,20 +177,8 @@ async function main() {
       if (!episodes.length) throw new Error('Feed enthält keine Folgen');
       base.sermons = episodes.slice(0, MAX_SERMONS);
       console.log(`ICF: Podcast mit ${episodes.length} Folgen. Neueste: ${episodes[0].title}`);
-      console.log(`ICF-Predigten: ${JSON.stringify(base.sermons)}`);
-      console.log(`ICF-Feed-Ausschnitt: ${JSON.stringify((/<item>[\s\S]*?<\/item>/.exec(text)?.[0] || '').slice(0, 2500))}`);
     } catch (err) {
       console.warn(`ICF: Predigtliste nicht aktualisiert – ${err.message}`);
-    }
-  }
-
-  // Erreichbarkeit der verlinkten Seiten ins Protokoll schreiben (ändert nichts an der App)
-  for (const link of config.links) {
-    try {
-      const res = await fetch(link.url, { headers: HEADERS, redirect: 'follow', signal: AbortSignal.timeout(15_000) });
-      console.log(`Link ${res.status}: ${link.url}${res.url !== link.url ? ` -> ${res.url}` : ''}`);
-    } catch (err) {
-      console.warn(`Link nicht erreichbar: ${link.url} (${err.message})`);
     }
   }
 

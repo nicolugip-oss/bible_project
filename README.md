@@ -21,8 +21,9 @@ Lückentext (drei Schwierigkeiten), Anfangsbuchstaben, Auswendig aufsagen, Einti
 Nach deiner Einschätzung («Noch nicht», «Fast», «Sitzt») kommt der Vers in wachsenden Abständen
 zur Wiederholung zurück (1, 2, 4, 7, 14, 30, 60, 120 Tage).
 
-**ICF** – Die neuesten Videos vom YouTube-Kanal von ICF Zürich, eine Suche nach Predigten zum
-Wochenthema des Leseplans, Predigtnotizen pro Kalenderwoche und Links zu Celebrations und Podcast.
+**ICF** – Die aktuelle Predigt von ICF Zürich mit Serie und Kurzbeschreibung, zum Anhören oder
+Ansehen direkt in der App. Dazu frühere Predigten, die neuesten Videos vom YouTube-Kanal, eine
+Suche nach Predigten zum Wochenthema des Leseplans und Predigtnotizen pro Kalenderwoche.
 
 **Mein Weg** – Überblick über den ganzen Leseplan, Serie der Tage in Folge, Einstellungen
 (Übersetzung, Startdatum) und eine Sicherung des Fortschritts zum Mitnehmen auf ein anderes Gerät.
@@ -42,7 +43,8 @@ Danach beginnt er von vorn; die Lernverse kommen dann als Wiederholung.
 4. Auf dem Handy öffnen und zum Home-Bildschirm hinzufügen
    (iPhone: Teilen → «Zum Home-Bildschirm», Android: Menü → «App installieren»).
 
-Der Ablauf läuft danach einmal täglich von selbst und holt dabei die neuesten Videos von ICF Zürich.
+Der Ablauf läuft danach einmal täglich von selbst und holt dabei die neuesten Predigten und
+Videos von ICF Zürich.
 Hinweis: GitHub pausiert zeitgesteuerte Abläufe, wenn im Repository 60 Tage lang nichts geändert
 wurde. Ein Klick auf «Run workflow» setzt sie wieder in Gang.
 
@@ -129,6 +131,9 @@ Abschnitte ausgegeben. Das Skript bricht ab, wenn ein Feld fehlt oder eine Stell
 ## ICF Zürich
 
 Diese App ist ein privates Projekt und kein offizielles Angebot von ICF Zürich. Sie verlinkt
-öffentlich zugängliche Inhalte: Der Ablauf `App veröffentlichen` liest den öffentlichen
-Video-Feed des YouTube-Kanals und legt Titel, Datum und Video-Kennung der neuesten Videos in
-`data/icf.json` ab. Abgespielt werden die Videos über YouTube.
+öffentlich zugängliche Inhalte: Der Ablauf `App veröffentlichen` liest den Podcast-Feed mit den
+Predigten und den Video-Feed des YouTube-Kanals. Er legt Titel, Datum, Serie, Kurzbeschreibung und
+die Adressen von Audio und Video in `data/icf.json` ab. Abgespielt wird über die Server von
+ICF Zürich beziehungsweise über YouTube; die App speichert keine Predigten.
+
+Schlägt der Abruf einmal fehl, bleibt die zuletzt geholte Liste bestehen.

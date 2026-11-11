@@ -52,20 +52,29 @@ test('extractChannelId findet die Kanal-ID in einer Kanalseite', () => {
   assert.equal(extractChannelId('<html>nichts</html>'), null);
 });
 
-test('parsePodcast liest Titel, Datum, Seite und Audiodatei', async () => {
+test('parsePodcast liest Titel, Datum, Audiodatei, Serie und Zusammenfassung', async () => {
   const { parsePodcast } = await import('../scripts/fetch-icf.mjs');
+  const long = 'In dieser Predigt geht es um einen Aufbruch, der Mut braucht, und um die Frage, worauf man sich dabei verlassen kann.';
   const xml = `<rss><channel><title>Beispiel</title>
   <item>
-    <title><![CDATA[Mut zum Aufbruch | Vorname Name]]></title>
-    <link>https://example.org/predigten/mut-zum-aufbruch/</link>
-    <pubDate>Sun, 08 Nov 2026 12:00:00 +0000</pubDate>
-    <description><![CDATA[<p>Eine <b>Predigt</b> &amp; mehr</p>]]></description>
+    <title>Mut zum Aufbruch | Vorname Name</title>
+    <description>Vorname Name: Ein Untertitel
+
+Das Thema «Mut zum Aufbruch» von Vorname Name ist Teil der Predigtserie «Unterwegs»
+
+${long}
+
+Mehr unter https://example.org/geben
+
+Stay Connected</description>
+    <pubDate>Sun, 08 Nov 2026 12:00:00 -0000</pubDate>
     <enclosure url="https://example.org/audio/1.mp3?x=1&amp;y=2" length="123" type="audio/mpeg"/>
-    <itunes:duration>00:41:07</itunes:duration>
+    <itunes:duration>2467</itunes:duration>
   </item>
   <item><title>Ohne Datum</title></item>
   <item>
-    <title>Nur Titel &amp; Datum</title>
+    <title><![CDATA[Nur Titel & Datum]]></title>
+    <description><![CDATA[<p>Kurz.</p>]]></description>
     <pubDate>Sun, 01 Nov 2026 12:00:00 +0000</pubDate>
   </item>
   </channel></rss>`;
@@ -73,10 +82,36 @@ test('parsePodcast liest Titel, Datum, Seite und Audiodatei', async () => {
     {
       title: 'Mut zum Aufbruch | Vorname Name',
       published: '2026-11-08T12:00:00.000Z',
-      link: 'https://example.org/predigten/mut-zum-aufbruch/',
       audio: 'https://example.org/audio/1.mp3?x=1&y=2',
-      duration: '00:41:07',
+      duration: '2467',
+      series: 'Unterwegs',
+      summary: long,
     },
     { title: 'Nur Titel & Datum', published: '2026-11-01T12:00:00.000Z' },
   ]);
+});
+
+test('describeSermon übernimmt keine Hinweise in eigener Sache als Zusammenfassung', async () => {
+  const { describeSermon } = await import('../scripts/fetch-icf.mjs');
+  assert.deepEqual(describeSermon('Teil der Predigtserie «Psalm 23»\n\nUm die Kirche zu unterstützen, hier klicken: https://example.org/geben und noch viel mehr Text dazu, damit es lang genug ist.'), { series: 'Psalm 23' });
+  assert.deepEqual(describeSermon('Einfach ein Text ohne Serie.'), {});
+});
+
+test('splitTitle, videoFor und formatDuration', async () => {
+  const { formatDuration, splitTitle, videoFor } = await import('../js/lib/icf.js');
+  assert.deepEqual(splitTitle('Er führt mich sicher | Leo Bigger'), { title: 'Er führt mich sicher', speaker: 'Leo Bigger' });
+  assert.deepEqual(splitTitle('Ohne Sprecher'), { title: 'Ohne Sprecher', speaker: '' });
+  const videos = [
+    { id: 'a', title: 'Hour of Prayer | Er führt mich sicher | ICF Zürich' },
+    { id: 'b', title: 'Er führt mich sicher | Leo Bigger' },
+  ];
+  assert.equal(videoFor({ title: 'Er führt mich sicher | Leo Bigger' }, videos).id, 'b');
+  assert.equal(videoFor({ title: 'Er führt mich sicher! | Leo Bigger' }, videos).id, 'b');
+  assert.equal(videoFor({ title: 'Etwas anderes | Leo Bigger' }, videos), undefined);
+  assert.equal(videoFor({ title: 'x' }, undefined), undefined);
+  assert.equal(formatDuration('2200'), '37 Min.');
+  assert.equal(formatDuration('00:41:07'), '41 Min.');
+  assert.equal(formatDuration('1:05:00'), '1 Std. 5 Min.');
+  assert.equal(formatDuration(''), '');
+  assert.equal(formatDuration('abc'), '');
 });

@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-11T14:11:56.000Z",
+  "updated": "2026-11-11T14:13:31.000Z",
   "channel": {
     "title": "ICF Zürich",
-    "url": "https://icf.ch/youtube",
+    "url": "https://www.youtube.com/channel/UCzNSY1t9NVOWDfBKukMiGGg",
     "id": "UCzNSY1t9NVOWDfBKukMiGGg"
   },
   "videos": [
@@ -42,23 +42,74 @@
       "published": "2026-10-31T21:50:29+00:00"
     }
   ],
-  "sermons": [],
-  "links": [
+  "sermons": [
     {
-      "label": "Website von ICF Zürich",
-      "url": "https://icf.church/zuerich"
+      "title": "Du führst mich durch dunkle Täler | Leo Bigger",
+      "published": "2026-11-08T08:30:00.000Z",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/ICFMOVEMENT3453605443.mp3",
+      "duration": "2200",
+      "series": "Psalm 23",
+      "summary": "In dieser Predigt erklärt Leo Bigger, dass dein Schmerz nicht sinnlos ist, sondern dich durch dunkle Täler hindurchreift. Mit Psalm 23 zeigt Leo: Das Tal ist kein Endpunkt, sondern ein Durchgang – und der Herr ist bei dir. Auch wenn du nicht verstehst, warum etwas passiert, darfst du Gott vertrauen. Er beleuchtet nicht deinen ganzen Weg, sondern nur den nächsten Schritt. Leo macht dir Mut, alte Sicherheiten loszulassen und zu glauben, dass Gott dich stärker herausführen will, als du hineingegangen bist. Selbst im Leid kann Gottes Güte, Trost und Nähe tiefer erfahrbar werden. Wie bei Hiob oder in Römer 5 wird aus Schmerz oft Wachstum, Hoffnung und ein neues Herz. Vielleicht fragst du dich …"
     },
     {
-      "label": "Celebrations: Zeiten und Orte",
-      "url": "https://icf.church/zuerich/celebrations"
+      "title": "Er führt mich sicher | Leo Bigger",
+      "published": "2026-11-01T14:30:00.000Z",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/ICFMOVEMENT9762193493.mp3",
+      "duration": "2265"
+    },
+    {
+      "title": "Gott gibt mir neue Kraft | Leo Bigger",
+      "published": "2026-10-25T08:30:00.000Z",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/ICFMOVEMENT3918337186.mp3",
+      "duration": "2641"
+    },
+    {
+      "title": "Der Herr ist mein Hirte, nichts wird mir fehlen | Leo Bigger",
+      "published": "2026-10-18T07:30:00.000Z",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/ICFMOVEMENT8463224338.mp3",
+      "duration": "2473"
+    },
+    {
+      "title": "Wie stärke ich Zusammenhalt? | Joël Vögeli",
+      "published": "2026-10-11T07:30:00.000Z",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/ICFMOVEMENT7932425248.mp3",
+      "duration": "1862"
+    },
+    {
+      "title": "So kann aus Streit wieder Frieden werden | Dave Kull",
+      "published": "2026-10-04T07:30:00.000Z",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/ICFMOVEMENT6308490084.mp3",
+      "duration": "2417"
+    },
+    {
+      "title": "Dieses Gebet wird deine Familie verändern | Leo Bigger",
+      "published": "2026-09-27T05:30:00.000Z",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/ICFMOVEMENT5929703367.mp3",
+      "duration": "2550"
+    },
+    {
+      "title": "Der Segen Gottes wohnt hier! | Leo Bigger",
+      "published": "2026-09-20T07:30:00.000Z",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/ICFMOVEMENT9702952889.mp3",
+      "duration": "2194"
+    }
+  ],
+  "links": [
+    {
+      "label": "Alle Predigten",
+      "url": "https://icf.church/zuerich/de/predigten/"
+    },
+    {
+      "label": "Celebration besuchen: Zeiten und Orte",
+      "url": "https://icf.church/zuerich/de/besuchen/"
     },
     {
       "label": "YouTube-Kanal",
-      "url": "https://icf.ch/youtube"
+      "url": "https://www.youtube.com/channel/UCzNSY1t9NVOWDfBKukMiGGg"
     },
     {
-      "label": "Podcast mit den Predigten",
-      "url": "https://icf.church/zuerich/en/podcast"
+      "label": "Website von ICF Zürich",
+      "url": "https://icf.church/zuerich/de/"
     }
   ]
 }

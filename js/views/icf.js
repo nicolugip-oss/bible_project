@@ -1,14 +1,16 @@
-// Bereich «ICF»: neueste Videos von ICF Zürich, Themensuche und Predigtnotizen.
+// Bereich «ICF»: aktuelle Predigten und Videos von ICF Zürich, Themensuche und Predigtnotizen.
 
 import { extLink, h, icon } from '../lib/dom.js';
 import { formatShort, isoWeek } from '../lib/dates.js';
+import { formatDuration, splitTitle, videoFor } from '../lib/icf.js';
 import { entryFor, icfSearchUrl } from '../lib/plan.js';
 
 const watchUrl = (id) => `https://www.youtube.com/watch?v=${encodeURIComponent(id)}`;
 const thumbUrl = (id, size = 'mqdefault') => `https://i.ytimg.com/vi/${encodeURIComponent(id)}/${size}.jpg`;
+const dateLabel = (iso) => formatShort(iso.slice(0, 10));
 
 function thumb(video, size) {
-  // Lädt das Vorschaubild nicht (offline oder blockiert), bleibt eine neutrale Fläche stehen.
+  // Lädt das Vorschaubild nicht (offline oder blockiert), bleibt keine leere Fläche stehen.
   return h('img', {
     src: thumbUrl(video.id, size),
     alt: '',
@@ -18,34 +20,94 @@ function thumb(video, size) {
   });
 }
 
-function featured(ctx, video) {
-  const frame = h('div', { class: 'video-frame' }, thumb(video, 'hqdefault'));
-  const actions = [extLink(watchUrl(video.id), 'Auf YouTube ansehen', { class: 'btn btn-primary' })];
-  if (ctx.canEmbed) {
-    actions.unshift(
-      h('button', {
-        class: 'btn',
-        type: 'button',
-        onclick: (e) => {
-          frame.replaceChildren(h('iframe', {
-            src: `https://www.youtube-nocookie.com/embed/${encodeURIComponent(video.id)}?autoplay=1&rel=0`,
-            title: video.title,
-            allow: 'accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen',
-            allowfullscreen: true,
-            referrerpolicy: 'strict-origin-when-cross-origin',
-          }));
-          e.currentTarget.remove();
-        },
-      }, icon('play', { filled: true }), 'Hier abspielen'),
-    );
-  }
+function playVideoButton(ctx, video, frame) {
+  if (!ctx.canEmbed) return extLink(watchUrl(video.id), 'Ansehen', { class: 'btn btn-primary' });
+  return h('button', {
+    class: 'btn btn-primary',
+    type: 'button',
+    onclick: (e) => {
+      frame.replaceChildren(h('iframe', {
+        src: `https://www.youtube-nocookie.com/embed/${encodeURIComponent(video.id)}?autoplay=1&rel=0`,
+        title: video.title,
+        allow: 'accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen',
+        allowfullscreen: true,
+        referrerpolicy: 'strict-origin-when-cross-origin',
+      }));
+      e.currentTarget.remove();
+    },
+  }, icon('play', { filled: true }), 'Ansehen');
+}
+
+function listenButton(ctx, sermon, slot) {
+  if (!ctx.canEmbed) return extLink(sermon.audio, 'Anhören', { class: 'btn' });
+  return h('button', {
+    class: 'btn',
+    type: 'button',
+    onclick: (e) => {
+      const player = h('audio', { controls: true, autoplay: true, preload: 'none', src: sermon.audio });
+      slot.replaceChildren(player);
+      e.currentTarget.remove();
+    },
+  }, 'Anhören');
+}
+
+function sermonMeta(sermon) {
+  const { speaker } = splitTitle(sermon.title);
+  return [speaker, sermon.series && `Serie «${sermon.series}»`, formatDuration(sermon.duration)].filter(Boolean).join(' · ');
+}
+
+function featuredSermon(ctx, sermon, video) {
+  const frame = h('div', { class: 'video-frame' }, video && thumb(video, 'hqdefault'));
+  const audioSlot = h('div', { class: 'audio-slot' });
   return h(
     'section',
     { class: 'card video-featured' },
     frame,
-    h('p', { class: 'eyebrow' }, `Neuestes Video · ${formatShort(video.published.slice(0, 10))}`),
+    h('p', { class: 'eyebrow' }, `Aktuelle Predigt · ${dateLabel(sermon.published)}`),
+    h('h2', {}, splitTitle(sermon.title).title),
+    h('p', { class: 'meta' }, sermonMeta(sermon)),
+    sermon.summary && h('p', { class: 'summary' }, sermon.summary),
+    h(
+      'div',
+      { class: 'row' },
+      video && playVideoButton(ctx, video, frame),
+      sermon.audio && listenButton(ctx, sermon, audioSlot),
+    ),
+    audioSlot,
+  );
+}
+
+function featuredVideo(ctx, video) {
+  const frame = h('div', { class: 'video-frame' }, thumb(video, 'hqdefault'));
+  return h(
+    'section',
+    { class: 'card video-featured' },
+    frame,
+    h('p', { class: 'eyebrow' }, `Neuestes Video · ${dateLabel(video.published)}`),
     h('h2', {}, video.title),
-    h('div', { class: 'row' }, actions),
+    h('div', { class: 'row' }, playVideoButton(ctx, video, frame)),
+  );
+}
+
+function sermonList(ctx, sermons) {
+  return h(
+    'ul',
+    { class: 'sermonlist' },
+    sermons.map((sermon) => {
+      const video = videoFor(sermon, ctx.icf.videos);
+      return h(
+        'li',
+        { class: 'sermonrow' },
+        h('span', { class: 'sermonrow-title' }, splitTitle(sermon.title).title),
+        h('span', { class: 'meta' }, [sermonMeta(sermon), dateLabel(sermon.published)].filter(Boolean).join(' · ')),
+        h(
+          'span',
+          { class: 'linkrow' },
+          sermon.audio && extLink(sermon.audio, 'Anhören'),
+          video && extLink(watchUrl(video.id), 'Ansehen'),
+        ),
+      );
+    }),
   );
 }
 
@@ -64,7 +126,7 @@ function videoList(videos) {
           'span',
           { class: 'videorow-main' },
           h('span', { class: 'videorow-title' }, v.title),
-          h('span', { class: 'meta' }, formatShort(v.published.slice(0, 10))),
+          h('span', { class: 'meta' }, dateLabel(v.published)),
         ),
       ),
     )),
@@ -72,9 +134,10 @@ function videoList(videos) {
 }
 
 export function renderIcf(ctx) {
-  const { day } = entryFor(ctx.days, ctx.n);
+  const today = entryFor(ctx.days, ctx.n).day;
   const icf = ctx.icf;
   const videos = icf.videos || [];
+  const sermons = icf.sermons || [];
   const week = isoWeek(ctx.today);
   const channelUrl = icf.channel?.url || 'https://icf.ch/youtube';
 
@@ -92,6 +155,20 @@ export function renderIcf(ctx) {
 
   const earlier = Object.keys(ctx.state.sermon).filter((w) => w !== week).sort().reverse();
 
+  let lead;
+  if (sermons.length) lead = featuredSermon(ctx, sermons[0], videoFor(sermons[0], videos));
+  else if (videos.length) lead = featuredVideo(ctx, videos[0]);
+  else {
+    lead = h(
+      'section',
+      { class: 'card' },
+      h('p', { class: 'eyebrow' }, 'Predigten'),
+      h('h2', {}, 'Aktuelle Celebrations ansehen'),
+      h('p', {}, 'Die Liste der neuesten Predigten wird einmal täglich aktualisiert, sobald die App online eingerichtet ist. Bis dahin findest du alles direkt auf dem Kanal.'),
+      h('div', { class: 'row' }, extLink(channelUrl, 'Zum YouTube-Kanal', { class: 'btn btn-primary' })),
+    );
+  }
+
   return h(
     'article',
     { class: 'view view-icf' },
@@ -103,24 +180,21 @@ export function renderIcf(ctx) {
       h('p', { class: 'lead' }, 'Was du unter der Woche liest, vertieft die Celebration am Wochenende – und umgekehrt.'),
     ),
 
-    videos.length
-      ? [
-          featured(ctx, videos[0]),
-          videos.length > 1 && h(
-            'section',
-            { class: 'block' },
-            h('h3', { class: 'label' }, 'Weitere Videos'),
-            h('div', { class: 'block-body' }, videoList(videos.slice(1, 9))),
-          ),
-        ]
-      : h(
-          'section',
-          { class: 'card' },
-          h('p', { class: 'eyebrow' }, 'Predigten'),
-          h('h2', {}, 'Aktuelle Celebrations ansehen'),
-          h('p', {}, 'Die Liste der neuesten Videos wird einmal täglich aktualisiert, sobald die App online eingerichtet ist. Bis dahin findest du alles direkt auf dem Kanal.'),
-          h('div', { class: 'row' }, extLink(channelUrl, 'Zum YouTube-Kanal', { class: 'btn btn-primary' })),
-        ),
+    lead,
+
+    sermons.length > 1 && h(
+      'section',
+      { class: 'block' },
+      h('h3', { class: 'label' }, 'Frühere Predigten'),
+      h('div', { class: 'block-body' }, sermonList(ctx, sermons.slice(1, 7))),
+    ),
+
+    videos.length > 0 && h(
+      'section',
+      { class: 'block' },
+      h('h3', { class: 'label' }, 'Neu auf YouTube'),
+      h('div', { class: 'block-body' }, videoList(videos.slice(0, 6))),
+    ),
 
     h(
       'section',
@@ -129,8 +203,8 @@ export function renderIcf(ctx) {
       h(
         'div',
         { class: 'block-body' },
-        h('p', {}, `Im Leseplan geht es diese Woche um «${day.week.theme}». Such dir dazu eine Predigt oder einen Input von ICF Zürich:`),
-        h('p', {}, extLink(icfSearchUrl(day.week.icf), `«${day.week.theme}» bei ICF Zürich`, { class: 'btn' })),
+        h('p', {}, `Im Leseplan geht es diese Woche um «${today.week.theme}». Such dir dazu eine Predigt oder einen Input von ICF Zürich:`),
+        h('p', {}, extLink(icfSearchUrl(today.week.icf), `«${today.week.theme}» bei ICF Zürich`, { class: 'btn' })),
         h(
           'details',
           { class: 'more' },
@@ -165,9 +239,9 @@ export function renderIcf(ctx) {
       h(
         'div',
         { class: 'block-body' },
-        h('ul', { class: 'linklist' }, (icf.links || []).map((l) => h('li', {}, extLink(l.url, l.label), l.note && h('span', { class: 'meta' }, l.note)))),
-        h('p', { class: 'hint' }, 'Diese App ist ein privates Projekt und kein offizielles Angebot von ICF Zürich. Videos und Seiten gehören ICF Zürich und werden nur verlinkt.'),
-        icf.updated && h('p', { class: 'hint' }, `Videoliste aktualisiert am ${formatShort(icf.updated.slice(0, 10))}.`),
+        h('ul', { class: 'linklist' }, (icf.links || []).map((l) => h('li', {}, extLink(l.url, l.label)))),
+        h('p', { class: 'hint' }, 'Diese App ist ein privates Projekt und kein offizielles Angebot von ICF Zürich. Predigten, Videos und Seiten gehören ICF Zürich und werden nur verlinkt.'),
+        icf.updated && h('p', { class: 'hint' }, `Stand der Liste: ${dateLabel(icf.updated)}.`),
       ),
     ),
   );
