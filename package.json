@@ -1,0 +1,16 @@
+{
+  "name": "taegliches-manna",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Persönliche Bibel-App: täglicher Leseplan mit Hintergrund, Lernvers-Trainer und ICF Zürich.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test",
+    "build:data": "node scripts/build-data.mjs",
+    "build:icf": "node scripts/fetch-icf.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

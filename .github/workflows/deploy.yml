@@ -1,0 +1,72 @@
+name: App veröffentlichen
+
+# Läuft bei jeder Änderung am Hauptzweig und zusätzlich einmal täglich,
+# damit die Liste der neuesten Videos von ICF Zürich aktuell bleibt.
+on:
+  push:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Prüfen und zusammenstellen
+    if: github.event_name != 'push' || github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    outputs:
+      pages: ${{ steps.pages.outputs.enabled }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Tests
+        run: npm test
+
+      - name: Neueste Videos von ICF Zürich holen
+        run: node scripts/fetch-icf.mjs
+
+      - name: Ist GitHub Pages aktiviert?
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api "repos/${{ github.repository }}/pages" --silent 2>/dev/null; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=GitHub Pages ist noch nicht aktiviert::Unter Settings → Pages bei «Source» den Eintrag «GitHub Actions» wählen und diesen Workflow erneut starten."
+          fi
+
+      - name: Website zusammenstellen
+        run: |
+          mkdir _site
+          cp -r index.html sw.js manifest.webmanifest css js data icons _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.pages.outputs.enabled == 'true'
+        with:
+          path: _site
+
+  deploy:
+    name: Auf GitHub Pages veröffentlichen
+    needs: build
+    if: needs.build.outputs.pages == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

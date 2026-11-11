@@ -1,0 +1,126 @@
+{
+  "id": "anbetung",
+  "title": "Staunen",
+  "theme": "Anbetung und Dankbarkeit",
+  "intro": "Anbetung ist mehr als Musik am Sonntag. Sie beginnt mit Staunen darüber, wer Gott ist, und zeigt sich in einem dankbaren Leben. Diese Woche übst du den Blick nach oben.",
+  "icf": "Anbetung Worship",
+  "days": [
+    {
+      "ref": "Psalm 8",
+      "src": "Ps 8",
+      "shift": 1,
+      "title": "Was ist der Mensch",
+      "background": "Ein Psalm Davids, der als Hirte viele Nächte unter freiem Himmel verbracht hat. Ohne künstliches Licht sind im Bergland Judas mit blossem Auge Tausende Sterne zu sehen. In den Nachbarkulturen galten Sonne, Mond und Sterne als Götter – hier sind sie «deiner Finger Werk». Der Hebräerbrief bezieht den Psalm auf Jesus (Hebräer 2,6-9).",
+      "context": "Der Psalm ist gerahmt vom selben Ausruf am Anfang und am Schluss: «HERR, unser Herrscher, wie herrlich ist dein Name in allen Landen!» Dazwischen wandert der Blick vom Himmel zum Menschen und zur Schöpfung.",
+      "insight": "Unter dem Sternenhimmel stellt David zwei Dinge gleichzeitig fest: wie klein der Mensch ist – und wie hoch Gott ihn achtet. Gott denkt an ihn, nimmt sich seiner an, krönt ihn mit Ehre und vertraut ihm seine Schöpfung an. Staunen bewahrt vor Überheblichkeit und vor Selbstverachtung zugleich. Und seine Macht richtet Gott ausgerechnet aus dem Mund von Kindern auf.",
+      "questions": [
+        "Wann hast du zuletzt gestaunt – über die Natur, einen Menschen, über Gott?",
+        "Neigst du eher dazu, dich zu gross oder zu klein zu sehen? Was sagt Psalm 8 dazu?"
+      ],
+      "action": "Schau heute Abend in den Himmel oder betrachte etwas in der Natur zwei Minuten lang – und sag Gott, was du siehst.",
+      "prayer": "Herr, unser Herrscher, wie herrlich ist dein Name! Danke, dass du an mich denkst.",
+      "verse": {
+        "ref": "Psalm 8,4-5",
+        "src": "Ps 8:3-4"
+      }
+    },
+    {
+      "ref": "Psalm 100",
+      "src": "Ps 100",
+      "title": "Jauchzet dem Herrn",
+      "background": "Die Überschrift lautet «Ein Dankpsalm». Vermutlich wurde er gesungen, wenn Pilger mit einem Dankopfer durch die Tore in die Vorhöfe des Tempels zogen. In nur fünf Versen stehen sieben Aufforderungen: jauchzen, dienen, kommen, erkennen, eingehen, danken, loben.",
+      "context": "Psalm 100 schliesst eine Gruppe von Psalmen ab, die Gott als König feiern (93–100). Der Aufruf gilt nicht nur Israel, sondern «aller Welt».",
+      "insight": "Der Psalm nennt Gründe für den Dank, und keiner hängt von deiner Tagesform ab: Der HERR ist Gott. Er hat uns gemacht, wir gehören ihm. Und er ist freundlich – seine Gnade währt ewig. Dank ist hier keine Stimmung, sondern ein Schritt durch ein Tor. «Dient dem HERRN mit Freuden»: Gott will keine mürrische Pflichterfüllung.",
+      "questions": [
+        "Mit welcher Haltung kommst du normalerweise in den Gottesdienst oder ins Gebet?",
+        "Welcher Grund für Dank aus diesem Psalm bedeutet dir heute am meisten?"
+      ],
+      "action": "Beginne dein nächstes Gebet mit zwei Minuten reinem Dank, bevor du eine einzige Bitte aussprichst.",
+      "prayer": "Herr, du bist Gott, du hast mich gemacht, und du bist freundlich. Ich komme mit Dank zu dir.",
+      "verse": { "ref": "Psalm 100,5", "src": "Ps 100:5" }
+    },
+    {
+      "ref": "Lukas 17,11-19",
+      "src": "Luke 17:11-19",
+      "title": "Einer kehrte um",
+      "background": "Aussätzige mussten ausserhalb der Ortschaften leben und Abstand halten (3. Mose 13,45-46) – darum rufen die zehn von ferne. Das gemeinsame Elend hat Juden und einen Samariter zusammengeführt, die sonst nichts miteinander zu tun hatten. Nur ein Priester konnte eine Heilung offiziell bestätigen und die Rückkehr in die Gemeinschaft erlauben.",
+      "context": "Jesus ist auf dem Weg nach Jerusalem und zieht durch das Grenzgebiet von Samarien und Galiläa. Lukas erzählt mehrfach, wie ausgerechnet Aussenseiter richtig reagieren.",
+      "insight": "Alle zehn glauben genug, um loszugehen, bevor sie etwas sehen – rein werden sie unterwegs. Aber nur einer kehrt um. Neun bekommen, was sie wollten; einer findet den Geber. Jesus fragt hörbar verwundert: «Wo sind aber die neun?» Dank ist offenbar nicht selbstverständlich, auch nicht bei Frommen. Dem einen sagt Jesus mehr zu als gesunde Haut: «Dein Glaube hat dir geholfen.»",
+      "questions": [
+        "Für welche erhörten Gebete hast du dich nie richtig bedankt?",
+        "Suchst du bei Gott eher seine Gaben oder ihn selbst?"
+      ],
+      "action": "Schreib heute jemandem, dem du viel verdankst, eine konkrete Dankesnachricht – und danke Gott für diesen Menschen.",
+      "prayer": "Jesus, ich kehre um und sage Danke. Verzeih, wo ich deine Hilfe für selbstverständlich genommen habe.",
+      "verse": { "ref": "1. Thessalonicher 5,16-18", "src": "1Thess 5:16-18" }
+    },
+    {
+      "ref": "Offenbarung 4",
+      "src": "Rev 4",
+      "title": "Vor dem Thron",
+      "background": "Johannes ist wegen seines Glaubens auf die Insel Patmos verbannt. In Rom lässt sich Kaiser Domitian als «Herr und Gott» anreden – diese Ehre geben die Ältesten in Vers 11 allein dem, der auf dem Thron sitzt. Die Bilder stammen aus dem Alten Testament: der Regenbogen von Noah, die vier Wesen aus Hesekiel 1, das dreifache «Heilig» aus Jesaja 6.",
+      "context": "Die Kapitel 2–3 enthalten Briefe an sieben bedrängte Gemeinden. Bevor Johannes sieht, was auf der Erde geschehen wird, sieht er, wer im Himmel regiert. «Stuhl» – also Thron – ist das Leitwort dieses Kapitels.",
+      "insight": "Das Erste, was Johannes im Himmel sieht, ist ein Thron – und er ist besetzt. Was immer auf der Erde aus den Fugen gerät, die Mitte der Wirklichkeit steht fest. Um den Thron hört die Anbetung nicht auf. Die Ältesten legen ihre Kronen nieder: Alles, was sie erreicht haben, geben sie zurück. Anbetung heisst, Gott den Platz zu geben, der ihm gehört.",
+      "questions": [
+        "Was würde sich an deiner grössten Sorge ändern, wenn du sie vom Thron aus betrachtest?",
+        "Welche «Krone» – Erfolg, Begabung, Anerkennung – fällt dir schwer, vor Gott niederzulegen?"
+      ],
+      "action": "Bete heute Vers 11 laut und nenne dabei konkret, was du Gott zurückgibst.",
+      "prayer": "Heilig, heilig, heilig bist du, Herr. Du sitzt auf dem Thron – ich lege meine Kronen vor dir nieder.",
+      "verse": { "ref": "Offenbarung 4,11", "src": "Rev 4:11" }
+    },
+    {
+      "ref": "Psalm 19",
+      "src": "Ps 19",
+      "shift": 1,
+      "title": "Die Himmel erzählen",
+      "background": "Ein Psalm Davids in drei Teilen. Der erste Teil nennt Gott mit dem allgemeinen Wort «El» – der Schöpfer, den alle Welt wahrnehmen kann. Im zweiten Teil steht mehrfach der Bundesname HERR: der Gott, der zu seinem Volk spricht. In den Nachbarkulturen war die Sonne eine Gottheit; hier ist sie ein Geschöpf, das wie ein Bräutigam aus seiner Kammer tritt.",
+      "context": "Der Psalm führt von aussen nach innen: vom Weltall (Vers 2–7) über Gottes Wort (8–12) bis ins eigene Herz (13–15). Staunen über die Schöpfung und ehrliche Selbstprüfung stehen im selben Lied.",
+      "insight": "Gott redet auf zwei Arten. Die Schöpfung spricht ohne Worte, Tag und Nacht, in jeder Sprache: Es gibt einen Schöpfer, und er ist herrlich. Sein Wort sagt mehr: wie er ist und was er will. David beschreibt es als erquickend, erfreuend, erleuchtend – köstlicher als Gold, süsser als Honig. Wer so hinhört, betet am Ende um ein Herz, das Gott gefällt.",
+      "questions": [
+        "Wo nimmst du Gottes «Reden ohne Worte» in der Schöpfung wahr?",
+        "Ist Gottes Wort für dich eher Last oder «süsser als Honig»? Was hat dein Empfinden geprägt?"
+      ],
+      "action": "Mach heute einen kurzen Spaziergang ohne Kopfhörer und achte darauf, was die Schöpfung über ihren Schöpfer sagt.",
+      "prayer": "Herr, mein Hort und mein Erlöser: Lass dir gefallen, was ich heute rede und denke.",
+      "verse": { "ref": "Psalm 19,15", "src": "Ps 19:14" }
+    },
+    {
+      "ref": "Johannes 12,1-8",
+      "src": "John 12:1-8",
+      "title": "Kostbares Öl",
+      "background": "Nardenöl wurde aus einer Pflanze des Himalaya gewonnen und über weite Handelswege eingeführt. Dreihundert Denare (Luther: «Groschen») waren etwa der Jahreslohn eines Arbeiters. Eine Frau löste ihr Haar gewöhnlich nicht vor Gästen. Es ist sechs Tage vor dem Passafest (Luther: «Ostern») – die letzte Woche im Leben von Jesus beginnt.",
+      "context": "Bethanien liegt nahe bei Jerusalem. Kurz zuvor hat Jesus dort Lazarus aus dem Grab gerufen (Kapitel 11). Nun sitzt dieser mit am Tisch, Martha dient, und Maria tut etwas Unerhörtes.",
+      "insight": "Maria rechnet nicht. Sie gibt das Kostbarste, was sie hat, in einem einzigen Moment – und das ganze Haus riecht danach. Judas nennt es Verschwendung und klingt dabei vernünftig und sozial. Jesus verteidigt sie: Sie hat verstanden, was die Jünger noch verdrängen – dass er sterben wird. Echte Anbetung wirkt auf Zuschauer manchmal übertrieben.",
+      "questions": [
+        "Was wäre dein «Nardenöl» – das Kostbare, das du Jesus geben könntest?",
+        "Wo bist du in deiner Hingabe eher berechnend als grosszügig?"
+      ],
+      "action": "Gib heute etwas grosszügig weg – Geld, Zeit oder Aufmerksamkeit – als Ausdruck deiner Liebe zu Jesus.",
+      "prayer": "Jesus, du bist mehr wert als alles, was ich habe. Ich will dir nicht nur geben, was übrig bleibt.",
+      "verse": {
+        "ref": "Markus 12,30",
+        "src": "Mark 12:30",
+        "trim": {
+          "luth1912": { "from": "du sollst Gott", "to": "Kräften." },
+          "elb1905": { "from": "du sollst den Herrn", "to": "ganzen Kraft" }
+        }
+      }
+    },
+    {
+      "ref": "Philipper 2,1-11",
+      "src": "Phil 2:1-11",
+      "title": "Der Weg nach unten",
+      "background": "Die Verse 6–11 sind wahrscheinlich ein Lied, das die ersten Christen schon sangen, bevor Paulus den Brief schrieb – eines der ältesten Zeugnisse christlicher Anbetung. Philippi war stolz auf seinen Status als römische Kolonie; Ehre und Rang zählten viel. Der Schluss greift Jesaja 45,23 auf, wo Gott von sich selbst sagt, dass sich ihm alle Knie beugen werden.",
+      "context": "In der Gemeinde gibt es Rivalitäten (4,2). Paulus antwortet nicht mit Regeln, sondern mit einem Lied über Jesus: So sieht die Gesinnung aus, die Gemeinschaft möglich macht.",
+      "insight": "Das Lied beschreibt eine Bewegung in zwei Richtungen. Abwärts: göttliche Gestalt, Knechtsgestalt, Mensch, Tod – ja, Tod am Kreuz. Dann aufwärts: Gott erhöht ihn und gibt ihm den Namen über alle Namen. Jesus hat seine Stellung nicht festgehalten, sondern eingesetzt. Wer ihn anbetet, kann nicht gleichzeitig um den eigenen Rang kämpfen.",
+      "questions": [
+        "Wo kämpfst du um deinen Rang oder dein Recht – in der Familie, im Job, in der Church?",
+        "Wie sähe es heute konkret aus, einen anderen höher zu achten als dich selbst?"
+      ],
+      "action": "Übernimm heute bewusst eine Aufgabe, die keiner sieht und für die es keinen Dank gibt.",
+      "prayer": "Jesus, du bist der Herr. Gib mir deine Gesinnung – dass ich dienen kann, ohne gesehen zu werden.",
+      "verse": { "ref": "Philipper 2,5", "src": "Phil 2:5" }
+    }
+  ]
+}

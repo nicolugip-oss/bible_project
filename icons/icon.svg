@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Tägliches Manna">
+  <rect width="512" height="512" rx="112" fill="#0c1120"/>
+  <!-- Morgensonne über dem Horizont: Manna gab es jeden Morgen neu -->
+  <circle cx="256" cy="296" r="112" fill="#f0b23e"/>
+  <rect x="0" y="296" width="512" height="216" fill="#0c1120"/>
+  <rect x="96" y="290" width="320" height="14" rx="7" fill="#eef1f8"/>
+  <!-- sieben Punkte: ein Mass für jeden Tag der Woche -->
+  <g fill="#f0b23e">
+    <circle cx="124" cy="366" r="13"/><circle cx="168" cy="366" r="13"/><circle cx="212" cy="366" r="13"/>
+    <circle cx="256" cy="366" r="13"/><circle cx="300" cy="366" r="13"/><circle cx="344" cy="366" r="13"/>
+  </g>
+  <circle cx="388" cy="366" r="11.5" fill="none" stroke="#f0b23e" stroke-width="3"/>
+</svg>

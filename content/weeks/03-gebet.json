@@ -1,0 +1,127 @@
+{
+  "id": "gebet",
+  "title": "Im Gespräch mit Gott",
+  "theme": "Gebet",
+  "intro": "Gebet ist kein religiöses Pflichtprogramm, sondern Beziehung. Diese Woche lernst du von Jesus, David, Elia und Paulus, wie ehrlich, einfach und ausdauernd man mit Gott reden kann.",
+  "icf": "Gebet",
+  "days": [
+    {
+      "ref": "Matthäus 6,5-15",
+      "src": "Matt 6:5-15",
+      "title": "Unser Vater",
+      "background": "Fromme Juden beteten dreimal täglich zu festen Zeiten; wer es darauf anlegte, stand dann gerade an einer belebten Strassenecke. Das «Kämmerlein» war die Vorratskammer – oft der einzige Raum im Haus, den man verriegeln konnte. Den Schluss «Denn dein ist das Reich …» enthalten die ältesten Handschriften nicht; er kam früh als Lobpreis im Gottesdienst hinzu.",
+      "context": "Das Vaterunser steht in der Mitte der Bergpredigt (Kapitel 5–7). Davor und danach spricht Jesus über Almosen und Fasten – jedes Mal mit derselben Frage: Für wessen Augen tust du es?",
+      "insight": "Jesus gibt kein Formular, sondern ein Muster. Die ersten drei Bitten drehen sich um Gott: sein Name, sein Reich, sein Wille. Erst dann kommen Brot, Schuld und Bewahrung. Bemerkenswert ist das «unser»: Auch wer allein in der Kammer betet, betet als Teil einer Familie. Und der Vater weiss, was du brauchst, bevor du bittest.",
+      "questions": [
+        "Welche Bitte des Vaterunsers sprichst du am leichtesten aus, welche am schwersten?",
+        "Womit beginnen deine Gebete meistens – mit Gott oder mit deiner Liste?"
+      ],
+      "action": "Bete das Vaterunser heute langsam, Bitte für Bitte, und füge nach jeder einen eigenen Satz an.",
+      "prayer": "Vater im Himmel, dein Name werde geheiligt – auch in meinem Leben, heute.",
+      "verse": {
+        "ref": "Matthäus 6,9-13",
+        "src": "Matt 6:9-13",
+        "trim": { "luth1912": { "from": "Unser Vater" }, "elb1905": { "from": "Unser Vater", "to": "von dem Bösen." } }
+      }
+    },
+    {
+      "ref": "Lukas 11,1-13",
+      "src": "Luke 11:1-13",
+      "title": "Der Freund um Mitternacht",
+      "background": "Gastfreundschaft war im Orient Ehrensache des ganzen Dorfes: Einen Gast ohne Brot zu lassen, wäre eine Schande gewesen. In einem einfachen Haus schlief die Familie gemeinsam in einem Raum, die Tür war verriegelt – wer aufstand, weckte alle. Das Wort in Vers 8 beschreibt ein unverschämtes Drängen: Der Bittende lässt nicht locker.",
+      "context": "Die Jünger sehen Jesus beten und bitten: «Herr, lehre uns beten.» Bemerkenswert: Sie fragen nicht, wie man predigt oder Wunder tut. Lukas betont das Gebetsleben von Jesus stärker als jeder andere Evangelist.",
+      "insight": "Das Gleichnis vergleicht Gott nicht mit dem mürrischen Nachbarn – es stellt ihn ihm gegenüber. Wenn schon ein genervter Freund aufsteht, wie viel mehr der Vater. Bitten, suchen, anklopfen stehen im Griechischen in der Dauerform: Bleibt dran. Die grösste Gabe, die der Vater gibt, ist er selbst: der Heilige Geist.",
+      "questions": [
+        "Bei welchem Anliegen hast du aufgehört zu beten – und warum?",
+        "Traust du Gott zu, dass er dir Gutes gibt, auch wenn die Antwort anders aussieht als deine Bitte?"
+      ],
+      "action": "Nimm ein Anliegen wieder auf, das du aufgegeben hast, und bring es Gott heute neu.",
+      "prayer": "Herr, lehre mich beten. Gib mir Ausdauer und das Vertrauen, dass du ein guter Vater bist.",
+      "verse": { "ref": "Matthäus 7,7", "src": "Matt 7:7" }
+    },
+    {
+      "ref": "Philipper 4,4-9",
+      "src": "Phil 4:4-9",
+      "title": "Sorgt euch um nichts",
+      "background": "Paulus schreibt in Ketten, vermutlich aus Rom, ohne zu wissen, ob er freikommt oder hingerichtet wird. Philippi war eine römische Militärkolonie, viele Veteranen lebten dort. Das Wort «bewahren» in Vers 7 stammt aus der Militärsprache: Gottes Friede steht Wache vor Herz und Gedanken wie eine Garnison.",
+      "context": "Kurz davor ermahnt Paulus zwei Mitarbeiterinnen, Evodia und Syntyche, sich zu versöhnen (Vers 2). Sorge, Streit und Freude liegen in diesem Abschnitt dicht beieinander – wie im echten Gemeindeleben.",
+      "insight": "Paulus sagt nicht einfach: Hör auf, dir Sorgen zu machen. Er nennt einen Tausch: Sorge gegen Gebet – und zwar mit Dank. Versprochen wird nicht, dass das Problem sofort verschwindet, sondern ein Friede, der höher ist als alle Vernunft. Vers 8 ergänzt: Achte darauf, womit du deine Gedanken fütterst.",
+      "questions": [
+        "Welche Sorge kreist seit Tagen in deinem Kopf?",
+        "Was geschieht mit einer Sorge, wenn du sie mit Dank verbindest?"
+      ],
+      "action": "Schreib deine grösste Sorge auf, mach daraus ein Gebet und ergänze drei Dinge, für die du in genau dieser Sache dankbar bist.",
+      "prayer": "Vater, ich lege dir hin, was mich beschäftigt. Dein Friede soll mein Herz und meine Gedanken bewachen.",
+      "verse": { "ref": "Philipper 4,6-7", "src": "Phil 4:6-7" }
+    },
+    {
+      "ref": "Psalm 63,2-9",
+      "src": "Ps 63:1-8",
+      "shift": 1,
+      "title": "Durst nach Gott",
+      "background": "Die Überschrift verortet den Psalm in der Wüste Juda, einer der trockensten Gegenden des Landes. David war dort zweimal auf der Flucht: vor Saul und später vor seinem eigenen Sohn Absalom. Weil Vers 12 von «dem König» spricht, denken viele Ausleger an die Flucht vor Absalom (2. Samuel 15).",
+      "context": "David hat Thron, Palast und den Zugang zum Heiligtum verloren. In dieser Lage bittet er nicht zuerst um Rettung – er sehnt sich nach Gott selbst und erinnert sich, wie er ihn im Heiligtum erlebt hat.",
+      "insight": "David macht aus seiner äusseren Lage ein Bild für die innere: So wie der Körper in der Wüste nach Wasser verlangt, verlangt die Seele nach Gott. Sein kühnster Satz: Deine Güte ist besser als Leben. Gebet ist hier nicht Mittel zum Zweck, sondern Hunger nach Gottes Nähe – am Morgen und in den wachen Stunden der Nacht.",
+      "questions": [
+        "Wonach hast du im Moment am meisten «Durst»?",
+        "Wann hast du Gottes Nähe zuletzt stark erlebt? Was hat dazu beigetragen?"
+      ],
+      "action": "Sprich morgen früh als Erstes einen Satz zu Gott – bevor du zum Handy greifst.",
+      "prayer": "Gott, du bist mein Gott. Wecke in mir den Durst nach dir und stille ihn.",
+      "verse": {
+        "ref": "Psalm 63,2",
+        "src": "Ps 63:1",
+        "trim": { "luth1912": { "from": "Gott, du bist mein Gott" }, "elb1905": { "from": "Gott, du bist mein Gott" } }
+      }
+    },
+    {
+      "ref": "1. Könige 19,1-13",
+      "src": "1Kgs 19:1-13",
+      "title": "Das stille, sanfte Sausen",
+      "background": "Unmittelbar zuvor hat Elia auf dem Karmel einen spektakulären Sieg über die Baalspropheten erlebt (Kapitel 18). Jetzt droht ihm Königin Isebel mit dem Tod. Er flieht bis nach Beer-Seba am Südrand Judas und weiter zum Horeb – ein anderer Name für den Sinai, wo Gott einst Mose begegnete. Sturm, Erdbeben und Feuer waren dort die Zeichen von Gottes Gegenwart gewesen.",
+      "context": "Elia ist am Ende: erschöpft, verängstigt, überzeugt, als Einziger übrig zu sein. Unter einem Wacholder bittet er zu sterben. Gottes Antwort beginnt nicht mit einer Predigt.",
+      "insight": "Zuerst kommt Schlaf, dann Brot und Wasser – zweimal. Gott nimmt die Erschöpfung seines Propheten ernst, bevor er mit ihm redet. Am Horeb ist Gott dann nicht im Lauten, sondern in einem stillen, sanften Sausen. Wer nur auf das Spektakuläre wartet, überhört ihn leicht. Und Gott stellt eine Frage, statt Vorwürfe zu machen: «Was machst du hier, Elia?»",
+      "questions": [
+        "Brauchst du im Moment eher eine geistliche Antwort – oder zuerst Schlaf, Essen und eine Pause?",
+        "Wo in deinem Alltag ist es still genug, um Gottes leise Stimme zu hören?"
+      ],
+      "action": "Plane heute zehn Minuten völlige Stille ein – ohne Musik, ohne Bildschirm. Hör einfach hin.",
+      "prayer": "Herr, ich werde still vor dir. Rede, wie du willst – ich höre.",
+      "verse": {
+        "ref": "Psalm 46,11",
+        "src": "Ps 46:10",
+        "trim": { "luth1912": { "to": "daß ich GOTT bin." }, "elb1905": { "to": "daß ich Gott bin!" } }
+      }
+    },
+    {
+      "ref": "Matthäus 26,36-46",
+      "src": "Matt 26:36-46",
+      "title": "Nicht wie ich will",
+      "background": "Gethsemane bedeutet «Ölpresse» – ein Olivengarten am Fuss des Ölbergs, gegenüber dem Tempel. Der «Kelch» ist im Alten Testament ein Bild für Gottes Gericht (Jesaja 51,17). Jesus weiss, was er in den nächsten Stunden tragen wird. Es ist die Nacht des Passafestes; kurz darauf wird er verhaftet.",
+      "context": "Direkt davor hat Jesus mit den Jüngern das Abendmahl gefeiert und angekündigt, dass alle ihn verlassen werden. Petrus, Jakobus und Johannes – dieselben drei, die seine Verklärung sahen – nimmt er mit in seine dunkelste Stunde.",
+      "insight": "Jesus betet ehrlich: Er sagt, was er sich wünscht, und er verschweigt seine Angst nicht. Dreimal ringt er, dreimal endet er bei «dein Wille geschehe». Gebet verändert hier nicht die Situation, sondern rüstet den Beter aus: Er steht auf und geht dem Kreuz entgegen. Die Jünger schlafen – und fliehen kurz darauf.",
+      "questions": [
+        "Bei welchem Thema fällt es dir schwer zu sagen: «Nicht wie ich will, sondern wie du willst»?",
+        "Sprichst du vor Gott auch Angst und Widerstand aus – oder betest du nur «anständig»?"
+      ],
+      "action": "Sag Gott heute ehrlich, was du dir in einer schwierigen Sache wünschst – und leg sie dann bewusst in seine Hand.",
+      "prayer": "Vater, du kennst meinen Wunsch. Doch nicht mein Wille soll geschehen, sondern deiner.",
+      "verse": { "ref": "Matthäus 26,41", "src": "Matt 26:41" }
+    },
+    {
+      "ref": "Jakobus 5,13-20",
+      "src": "Jas 5:13-20",
+      "title": "Das Gebet des Gerechten",
+      "background": "Öl war in der Antike ein gängiges Heilmittel und zugleich ein Zeichen für Gottes Zuwendung. Die «Ältesten» waren die Leiter der Ortsgemeinde. Jakobus verweist auf Elia (1. Könige 17–18) und betont ausdrücklich: Er war ein Mensch wie wir. Über Jakobus selbst berichtet die frühe Überlieferung, seine Knie seien vom vielen Beten hart geworden wie die eines Kamels.",
+      "context": "Der Brief endet nicht mit Grüssen, sondern mit einem Aufruf zum Gebet in jeder Lebenslage: im Leid, in der Freude, in Krankheit, in Schuld. Echter Glaube – das Thema des ganzen Briefs – zeigt sich zuletzt im Beten füreinander.",
+      "insight": "Jakobus macht Gebet zur Gemeinschaftssache: die Ältesten rufen, einander bekennen, füreinander beten. Vieles tragen wir allein, was gemeinsam leichter würde. Und er nimmt die Ausrede weg, Gebet sei etwas für Glaubenshelden. Elia war ein Mensch wie du.",
+      "questions": [
+        "Wem könntest du etwas anvertrauen, das du bisher mit dir allein ausmachst?",
+        "Für wen betest du regelmässig – und wer betet für dich?"
+      ],
+      "action": "Schreib heute einer Person: «Wofür darf ich diese Woche für dich beten?» – und tu es dann.",
+      "prayer": "Herr, danke, dass du hörst. Mach mich zu jemandem, der für andere einsteht.",
+      "verse": { "ref": "Jakobus 5,16", "src": "Jas 5:16" }
+    }
+  ]
+}

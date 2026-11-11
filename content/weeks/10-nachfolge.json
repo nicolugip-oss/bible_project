@@ -1,0 +1,133 @@
+{
+  "id": "nachfolge",
+  "title": "Folge mir nach",
+  "theme": "Nachfolge und Berufung",
+  "intro": "Jesus ruft Menschen nicht in ein System, sondern hinter sich her. Diese Woche geht es darum, was Nachfolge kostet, was sie schenkt und wozu du berufen bist.",
+  "icf": "Nachfolge Berufung",
+  "days": [
+    {
+      "ref": "Lukas 5,1-11",
+      "src": "Luke 5:1-11",
+      "title": "Fahre auf die Höhe",
+      "background": "Auf dem See Genezareth wurde nachts im flachen Wasser gefischt, weil die Fische tagsüber die Netze sahen und in die Tiefe auswichen. Am helllichten Tag im Tiefen zu fischen, widersprach aller Berufserfahrung – und der Rat kommt von einem Zimmermann. Petrus kennt Jesus bereits: Kurz zuvor hat dieser seine Schwiegermutter geheilt (4,38-39).",
+      "context": "Jesus predigt am Ufer, das Volk drängt sich, und er leiht sich Simons Boot als Kanzel. Erst danach wendet er sich dem müden Fischer selbst zu.",
+      "insight": "«Aber auf dein Wort» – an diesem Satz hängt alles. Petrus gehorcht gegen seine Erfahrung, nach einer erfolglosen Nacht. Der überwältigende Fang macht ihn nicht stolz, sondern zeigt ihm, wer vor ihm steht: «Herr, gehe von mir hinaus! Ich bin ein sündiger Mensch.» Jesus geht nicht weg. Er nimmt ihm die Angst und gibt ihm einen neuen Beruf. Sie verlassen alles – auf dem Höhepunkt ihres Erfolgs.",
+      "questions": [
+        "Wo hast du dich «die ganze Nacht» abgemüht und nichts erreicht?",
+        "Wo fordert Jesus dich auf, es auf sein Wort hin noch einmal zu versuchen?"
+      ],
+      "action": "Stell Jesus heute etwas aus deinem Alltag zur Verfügung, so wie Petrus sein Boot: Zeit, einen Raum, eine Fähigkeit.",
+      "prayer": "Herr, auf dein Wort hin will ich es wagen. Nimm mein Boot, nimm mein Leben.",
+      "verse": {
+        "ref": "Matthäus 4,19",
+        "src": "Matt 4:19",
+        "trim": { "luth1912": { "from": "Folget mir nach" }, "elb1905": { "from": "Kommet mir nach" } }
+      }
+    },
+    {
+      "ref": "Matthäus 5,1-16",
+      "src": "Matt 5:1-16",
+      "title": "Salz und Licht",
+      "background": "Jesus setzt sich zum Lehren – die Haltung eines Rabbis mit Autorität. Salz diente in einer Welt ohne Kühlschrank vor allem zum Haltbarmachen und Würzen. Die Häuser Galiläas hatten meist einen einzigen Raum; eine Öllampe auf dem Leuchter erhellte ihn ganz. Städte auf Hügelkuppen waren nachts weithin sichtbar.",
+      "context": "So beginnt die Bergpredigt, die erste von fünf grossen Reden bei Matthäus. Bevor Jesus irgendetwas fordert, spricht er Glückwünsche aus – über Menschen, die man gewöhnlich nicht beneidet.",
+      "insight": "Die Seligpreisungen sind keine Aufnahmebedingungen, sondern eine Beschreibung der Menschen, denen das Himmelreich gehört: geistlich arm, leidtragend, sanftmütig, hungrig nach Gerechtigkeit. Dann sagt Jesus nicht «werdet», sondern «ihr seid» Salz und Licht. Beides wirkt nur im Kontakt: Salz im Streuer und Licht unter dem Scheffel nützen nichts. Ziel ist, dass Menschen den Vater preisen, nicht uns.",
+      "questions": [
+        "Welche Seligpreisung spricht dich heute an – und welche fordert dich heraus?",
+        "Wo versteckst du dein Licht, weil es bequemer ist?"
+      ],
+      "action": "Tu heute an deinem Arbeits- oder Ausbildungsort etwas Gutes, das niemand von dir erwartet.",
+      "prayer": "Jesus, du nennst mich Salz und Licht. Lass mich heute dort wirken, wo du mich hingestellt hast.",
+      "verse": { "ref": "Matthäus 5,16", "src": "Matt 5:16" }
+    },
+    {
+      "ref": "Lukas 9,18-26",
+      "src": "Luke 9:18-26",
+      "title": "Das Kreuz auf sich nehmen",
+      "background": "Wer in der römischen Welt ein Kreuz trug, war zum Tod verurteilt und auf dem Weg zur Hinrichtung. Für die Jünger war das Bild kein frommes Symbol, sondern ein Schock. «Christus» ist die griechische Form von «Messias», der Gesalbte. Viele erwarteten einen Befreier von den Römern – Jesus kündigt stattdessen sein Leiden an.",
+      "context": "Die Szene ist ein Wendepunkt des Evangeliums. Bis hierher ging es um die Frage: Wer ist Jesus? Nach dem Bekenntnis von Petrus geht es um die Frage: Welchen Weg geht er – und was heisst das für die, die ihm folgen?",
+      "insight": "Zuerst die persönliche Frage: «Wer saget ihr aber, dass ich sei?» Die Meinung der Leute genügt nicht. Dann die Konsequenz: Nachfolge ist kein Zusatz zum bisherigen Leben. Nur Lukas überliefert das Wort «täglich» – es geht nicht um einen heroischen Moment, sondern um eine Entscheidung, die jeden Tag neu fällt. Das Paradox: Wer sein Leben festhält, verliert es. Wer es hergibt, erhält es.",
+      "questions": [
+        "Was antwortest du persönlich auf die Frage von Jesus: «Wer sagst du, dass ich sei?»",
+        "Wo heisst Nachfolge für dich heute konkret, auf etwas zu verzichten?"
+      ],
+      "action": "Triff heute bewusst eine Entscheidung für Jesus, die dich etwas kostet – Bequemlichkeit, Zeit oder Ansehen.",
+      "prayer": "Jesus, du bist der Christus Gottes. Ich will dir heute folgen – auch dort, wo es mich etwas kostet.",
+      "verse": {
+        "ref": "Lukas 9,23",
+        "src": "Luke 9:23",
+        "trim": { "luth1912": { "from": "Wer mir folgen will" }, "elb1905": { "from": "Wenn jemand" } }
+      }
+    },
+    {
+      "ref": "Johannes 15,1-17",
+      "src": "John 15:1-17",
+      "title": "Der Weinstock",
+      "background": "Der Weinstock war ein Bild für Israel: Er zierte Münzen, und am Tempel hing eine grosse goldene Weinranke. Die Propheten klagten, dieser Weinstock habe schlechte Frucht gebracht (Jesaja 5). Jesus sagt: Ich bin der rechte Weinstock. Reben werden im Winter stark zurückgeschnitten – ohne Schnitt wächst viel Laub und wenig Frucht.",
+      "context": "Es ist der letzte Abend vor der Kreuzigung, mitten in den Abschiedsreden. Das Wort vom Weinstock ist das letzte der sieben «Ich bin»-Worte im Johannesevangelium.",
+      "insight": "Das Schlüsselwort ist «bleiben» – es zieht sich durch den ganzen Abschnitt. Eine Rebe strengt sich nicht an, Trauben zu produzieren; sie bleibt am Stock. Frucht ist Folge der Verbindung. Der Vater reinigt auch fruchtbare Reben, damit sie mehr bringen: Nicht jeder Schnitt ist Strafe. Und Jesus nennt seine Jünger nicht mehr Knechte, sondern Freunde.",
+      "questions": [
+        "Was hilft dir praktisch, im Alltag mit Jesus verbunden zu bleiben?",
+        "Wo erlebst du gerade einen schmerzhaften «Schnitt» – und könnte er der Frucht dienen?"
+      ],
+      "action": "Stell dir heute dreimal einen Wecker. Halte jedes Mal eine Minute inne und sag: «Jesus, ich bleibe in dir.»",
+      "prayer": "Jesus, ohne dich kann ich nichts tun. Ich will in dir bleiben – lass daraus Frucht wachsen, die bleibt.",
+      "verse": { "ref": "Johannes 15,5", "src": "John 15:5" }
+    },
+    {
+      "ref": "2. Mose 3,1-15",
+      "src": "Exod 3:1-15",
+      "title": "Der brennende Dornbusch",
+      "background": "Mose ist achtzig Jahre alt. Vierzig Jahre zuvor hatte er als ägyptischer Prinz versucht, sein Volk auf eigene Faust zu retten, einen Aufseher erschlagen und fliehen müssen (2,11-15). Seither hütet er in Midian die Schafe seines Schwiegervaters. Der Horeb ist der Sinai. Der Gottesname in Vers 14 hängt mit dem hebräischen Wort für «sein» zusammen: «Ich werde sein, der ich sein werde.»",
+      "context": "Israel leidet seit Generationen als Sklavenvolk in Ägypten. Kapitel 2 endet damit, dass Gott das Wehklagen hört, an seinen Bund denkt und sich des Volkes annimmt. Kapitel 3 zeigt, wie er eingreift – durch einen Menschen.",
+      "insight": "Gott ruft Mose nicht im Palast, sondern bei der Arbeit, an einem gewöhnlichen Tag. Auf den Einwand «Wer bin ich?» antwortet Gott nicht mit einem Kompliment, sondern mit einer Zusage: «Ich will mit dir sein.» Entscheidend ist nicht, wer Mose ist, sondern wer mit ihm geht. Der gescheiterte Befreier bekommt eine zweite Berufung – diesmal in Gottes Kraft.",
+      "questions": [
+        "Welchen Einwand bringst du vor, wenn Gott dir etwas zutraut?",
+        "Gibt es ein früheres Scheitern, das dich bis heute davon abhält, dich rufen zu lassen?"
+      ],
+      "action": "Schreib deinen grössten Einwand gegen Gottes Ruf auf – und daneben seine Antwort: «Ich will mit dir sein.»",
+      "prayer": "Hier bin ich, Herr. Ich fühle mich nicht geeignet – aber du bist mit mir. Sende mich.",
+      "verse": {
+        "ref": "2. Korinther 12,9",
+        "src": "2Cor 12:9",
+        "trim": {
+          "luth1912": { "from": "Laß dir an meiner Gnade", "to": "mächtig." },
+          "elb1905": { "from": "Meine Gnade genügt dir", "to": "vollbracht." }
+        }
+      }
+    },
+    {
+      "ref": "Johannes 21,15-22",
+      "src": "John 21:15-22",
+      "title": "Hast du mich lieb?",
+      "background": "Die Szene spielt am See von Tiberias, nach einem Frühstück am Kohlenfeuer. Das seltene Wort für «Kohlenfeuer» steht im Neuen Testament nur noch an einer Stelle: im Hof des Hohenpriesters, wo Petrus Jesus dreimal verleugnete (18,18). Nach früher Überlieferung starb Petrus unter Kaiser Nero in Rom als Märtyrer – darauf deutet Vers 18.",
+      "context": "Petrus hatte geschworen, für Jesus zu sterben, und ihn in derselben Nacht verleugnet. Nach Ostern ist er zum Fischen zurückgekehrt. Am Ufer wartet der Auferstandene.",
+      "insight": "Jesus fragt nicht «Warum hast du das getan?» oder «Wirst du es wieder tun?», sondern dreimal: «Hast du mich lieb?» Drei Fragen für drei Verleugnungen, wieder an einem Kohlenfeuer. Und jedes Mal folgt ein Auftrag: Weide meine Schafe. Wiederherstellung heisst hier nicht nur Vergebung, sondern neues Vertrauen. Auf den Seitenblick zu Johannes antwortet Jesus: Was geht es dich an? Folge du mir nach.",
+      "questions": [
+        "Gibt es ein Versagen, von dem du denkst, es habe dich für Gott unbrauchbar gemacht?",
+        "Mit wem vergleichst du deinen Weg – und was sagt Jesus dazu?"
+      ],
+      "action": "Beantworte die Frage von Jesus heute dreimal laut und ehrlich.",
+      "prayer": "Herr, du weisst alle Dinge, du weisst, dass ich dich lieb habe. Danke, dass du mit mir neu anfängst.",
+      "verse": {
+        "ref": "Philipper 1,6",
+        "src": "Phil 1:6",
+        "trim": { "luth1912": { "from": "der in euch angefangen" } }
+      }
+    },
+    {
+      "ref": "Matthäus 28,16-20",
+      "src": "Matt 28:16-20",
+      "title": "Geht hin",
+      "background": "Galiläa war die Heimat der Jünger und zugleich Grenzland zu den Völkern. Es sind elf Jünger – Judas fehlt. Matthäus verschweigt nicht: «Etliche aber zweifelten.» Sein Evangelium beginnt mit dem Namen Immanuel, «Gott mit uns» (1,23), und endet mit «Ich bin bei euch». Getauft wird auf den einen Namen von Vater, Sohn und Heiligem Geist.",
+      "context": "Das sind die letzten Verse des Matthäusevangeliums. Nach Kreuz und Auferstehung trifft Jesus die Jünger auf einem Berg – wie bei der Bergpredigt und der Verklärung.",
+      "insight": "Der Auftrag steht zwischen zwei Zusagen: «Mir ist gegeben alle Gewalt» davor und «Ich bin bei euch alle Tage» danach. Im Griechischen steht nur ein Befehl: Macht zu Jüngern. Gehen, taufen und lehren beschreiben, wie das geschieht. Jesus gibt diesen Auftrag einer kleinen, unvollständigen Gruppe mit Zweiflern darunter. Offenbar genügt das.",
+      "questions": [
+        "Wer hat dich im Glauben geprägt – wer hat in dich investiert?",
+        "In wen investierst du gerade, damit er oder sie im Glauben wächst?"
+      ],
+      "action": "Überlege dir eine Person, die du im Glauben begleiten könntest, und schlag ihr ein Treffen vor.",
+      "prayer": "Herr, dir gehört alle Macht, und du bist bei mir alle Tage. Zeig mir, zu wem du mich sendest.",
+      "verse": { "ref": "Matthäus 28,19-20", "src": "Matt 28:19-20" }
+    }
+  ]
+}

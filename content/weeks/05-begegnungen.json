@@ -1,0 +1,122 @@
+{
+  "id": "begegnungen",
+  "title": "Begegnungen",
+  "theme": "Jesus begegnen",
+  "intro": "Wer wissen will, wie Gott ist, schaut Jesus an. Diese Woche begleitest du sieben Menschen, deren Leben sich durch eine einzige Begegnung mit ihm verändert hat.",
+  "icf": "Jesus begegnen",
+  "days": [
+    {
+      "ref": "Johannes 4,5-26",
+      "src": "John 4:5-26",
+      "title": "Die Frau am Brunnen",
+      "background": "Juden und Samariter mieden einander seit Jahrhunderten. Wasser holten Frauen gewöhnlich am kühlen Morgen oder Abend und in Gruppen. Diese Frau kommt allein zur «sechsten Stunde», also um die Mittagszeit. Dass ein Rabbi öffentlich mit einer fremden Frau sprach, war unüblich – die Jünger wundern sich entsprechend (Vers 27).",
+      "context": "In Kapitel 3 kam Nikodemus, ein angesehener Theologe, bei Nacht. Jetzt begegnet Jesus am hellen Mittag einer Frau mit zerbrochener Biografie. Ihr sagt er so offen wie kaum jemandem sonst, dass er der Messias ist.",
+      "insight": "Jesus beginnt mit einer Bitte: «Gib mir zu trinken.» Er macht sich bedürftig, um ins Gespräch zu kommen. Er kennt ihre Geschichte – fünf Männer – und spricht sie an, ohne sie blosszustellen. Hinter ihrem Durst nach Beziehung sieht er einen tieferen Durst. Die Frage nach dem richtigen Ort der Anbetung beantwortet er mit einer Person: «Ich bin's.»",
+      "questions": [
+        "Aus welchen «Brunnen» versuchst du, deinen Lebensdurst zu stillen?",
+        "Gibt es etwas, bei dem du wie die Frau lieber das Thema wechselst, wenn Jesus es anspricht?"
+      ],
+      "action": "Sprich heute bewusst mit jemandem, an dem du normalerweise vorbeigehst.",
+      "prayer": "Jesus, du kennst meine ganze Geschichte und bietest mir trotzdem lebendiges Wasser an. Gib mir davon.",
+      "verse": { "ref": "Johannes 4,14", "src": "John 4:14" }
+    },
+    {
+      "ref": "Lukas 19,1-10",
+      "src": "Luke 19:1-10",
+      "title": "Zachäus",
+      "background": "Jericho war eine reiche Grenz- und Handelsstadt. Zöllner pachteten von den Römern das Recht, Abgaben einzutreiben, und wirtschafteten dabei in die eigene Tasche; sie galten als Kollaborateure und Betrüger. Zachäus ist sogar ein Oberster der Zöllner. Das Gesetz verlangte bei Betrug die Rückgabe plus ein Fünftel – er verspricht das Vierfache.",
+      "context": "Jesus ist auf dem Weg nach Jerusalem, zum Kreuz. Kurz zuvor ging ein reicher Mann traurig weg (18,23), und Jesus sagte, eher gehe ein Kamel durch ein Nadelöhr. In Jericho geschieht das Unmögliche.",
+      "insight": "Zachäus will Jesus nur sehen. Jesus aber sieht ihn, nennt ihn beim Namen und lädt sich selbst ein: «Ich muss heute in deinem Haus einkehren.» Die Annahme kommt vor der Veränderung, nicht umgekehrt. Die Grosszügigkeit des Zachäus ist nicht der Preis für die Gnade, sondern ihre Folge. Jesus fasst seinen Auftrag zusammen: suchen und retten, was verloren ist.",
+      "questions": [
+        "Wo beobachtest du Jesus lieber aus sicherer Distanz, statt ihn «ins Haus» zu lassen?",
+        "Gibt es etwas, das du wiedergutmachen solltest, seit du Jesus begegnet bist?"
+      ],
+      "action": "Lade diese Woche jemanden zum Essen ein, der in deinem Umfeld eher am Rand steht.",
+      "prayer": "Jesus, kehr heute bei mir ein. Verändere, was du in meinem Haus vorfindest.",
+      "verse": { "ref": "Lukas 19,10", "src": "Luke 19:10" }
+    },
+    {
+      "ref": "Markus 2,1-12",
+      "src": "Mark 2:1-12",
+      "title": "Durch das Dach",
+      "background": "Häuser in Kapernaum hatten Flachdächer aus Holzbalken, Zweigen und festgestampftem Lehm, erreichbar über eine Aussentreppe. Ein solches Dach liess sich aufgraben – so schreibt es Markus wörtlich. Krankheit galt damals vielen als Folge persönlicher Schuld. «Menschensohn» ist ein Titel aus Daniel 7,13-14 für den, dem Gott alle Vollmacht gibt.",
+      "context": "Mit dieser Szene beginnt bei Markus eine Reihe von fünf Streitgesprächen mit den religiösen Führern. Zum ersten Mal fällt der Vorwurf der Gotteslästerung – derselbe, der später zum Todesurteil führt.",
+      "insight": "Jesus sieht «ihren» Glauben – den der Freunde. Manchmal trägt dich der Glaube anderer, wenn dein eigener nicht reicht. Dann überrascht Jesus alle: Er vergibt zuerst. Er sieht eine tiefere Not als die offensichtliche. Die Heilung macht sichtbar, was unsichtbar bereits geschehen ist.",
+      "questions": [
+        "Wer hat dich schon einmal zu Jesus «getragen», als du selbst nicht konntest?",
+        "Wen könntest du im Moment tragen – durch Gebet, einen Besuch, praktische Hilfe?"
+      ],
+      "action": "Melde dich heute bei jemandem, dem es nicht gut geht, und frag, was er konkret braucht.",
+      "prayer": "Jesus, danke für die Menschen, die mich getragen haben. Zeig mir, für wen ich heute ein solcher Freund sein kann.",
+      "verse": { "ref": "Matthäus 11,28", "src": "Matt 11:28" }
+    },
+    {
+      "ref": "Johannes 8,1-11",
+      "src": "John 8:1-11",
+      "title": "Wer ohne Sünde ist",
+      "background": "Diese Erzählung fehlt in den ältesten Handschriften des Johannesevangeliums und steht in manchen an anderer Stelle; viele Bibeln setzen sie deshalb in Klammern. Die meisten Ausleger halten sie dennoch für eine alte, echte Jesus-Überlieferung. Auffällig: Das Gesetz verlangte die Strafe für beide Beteiligten (3. Mose 20,10) – der Mann fehlt.",
+      "context": "Die Szene spielt im Tempel, wo Jesus lehrt. Den Anklägern geht es nicht um die Frau, sondern um eine Falle: Spricht er sie frei, missachtet er Mose; verurteilt er sie, gerät er in Konflikt mit dem römischen Recht.",
+      "insight": "Jesus bückt sich und schreibt auf die Erde – er nimmt dem Tribunal das Tempo. Dann ein Satz, und einer nach dem andern geht, die Ältesten zuerst. Der Einzige, der werfen dürfte, tut es nicht. Beachte die Reihenfolge: zuerst «Ich verdamme dich nicht», dann «Sündige hinfort nicht mehr». Gnade verharmlost nichts, sie macht einen Neuanfang möglich.",
+      "questions": [
+        "Wo stehst du gerade mit einem Stein in der Hand da – über wen urteilst du schnell?",
+        "Welche Schuld hält dich noch fest, obwohl Jesus sagt: «Ich verdamme dich nicht»?"
+      ],
+      "action": "Leg heute bewusst einen «Stein» nieder: Bete für die Person, über die du dich zuletzt geärgert hast.",
+      "prayer": "Jesus, du verurteilst mich nicht. Hilf mir, anderen dieselbe Gnade zu geben – und neu anzufangen.",
+      "verse": { "ref": "Römer 8,1", "src": "Rom 8:1" }
+    },
+    {
+      "ref": "Markus 10,46-52",
+      "src": "Mark 10:46-52",
+      "title": "Bartimäus",
+      "background": "Jericho liegt gut 25 Kilometer von Jerusalem entfernt; hier sammelten sich die Pilger vor dem steilen Aufstieg zum Passafest – ein guter Platz für Bettler. «Sohn Davids» ist ein Messiastitel: Bartimäus sieht mehr als die Sehenden um ihn herum. Der Mantel war für einen Bettler Decke und Besitz in einem; vermutlich lag er ausgebreitet vor ihm, um die Münzen aufzufangen.",
+      "context": "Es ist die letzte Heilung bei Markus vor dem Einzug in Jerusalem. Unmittelbar davor stellt Jesus Jakobus und Johannes dieselbe Frage wie Bartimäus: «Was wollt ihr, dass ich euch tue?» Sie bitten um Ehrenplätze.",
+      "insight": "Die Menge will Bartimäus zum Schweigen bringen; er schreit noch lauter. Dann bleibt Jesus stehen – auf dem Weg zum Kreuz hat er Zeit für einen Einzelnen. Bartimäus wirft seinen Mantel weg, bevor er sehen kann. Auf die Frage von Jesus antwortet er ohne Umschweife. Und danach geht er nicht nach Hause: Er folgt Jesus auf dem Weg.",
+      "questions": [
+        "Wenn Jesus dich heute fragt: «Was willst du, dass ich dir tun soll?» – was antwortest du?",
+        "Welche Stimmen von aussen oder in dir wollen dich zum Schweigen bringen, wenn du nach Jesus rufst?"
+      ],
+      "action": "Formuliere deine Antwort auf die Frage von Jesus in einem einzigen, klaren Satz und bete ihn.",
+      "prayer": "Jesus, Sohn Davids, erbarme dich meiner. Öffne mir die Augen für dich und deinen Weg.",
+      "verse": {
+        "ref": "Johannes 8,12",
+        "src": "John 8:12",
+        "trim": { "luth1912": { "from": "Ich bin das Licht" }, "elb1905": { "from": "Ich bin das Licht" } }
+      }
+    },
+    {
+      "ref": "Lukas 7,36-50",
+      "src": "Luke 7:36-50",
+      "title": "Viel vergeben, viel geliebt",
+      "background": "Bei einem Festmahl lag man zu Tisch, auf den linken Arm gestützt, die Füsse nach hinten – so konnte die Frau an die Füsse von Jesus gelangen. Solche Mahlzeiten waren halböffentlich; Zaungäste durften zuhören. Wasser für die Füsse, ein Begrüssungskuss und Öl für den Kopf gehörten zur Höflichkeit eines Gastgebers. Simon hat alle drei unterlassen. Ein Groschen (Denar) entsprach einem Tageslohn.",
+      "context": "Kurz davor wird Jesus als «Freund der Zöllner und Sünder» verspottet (Vers 34). Diese Szene zeigt, was das bedeutet – ausgerechnet im Haus eines Pharisäers.",
+      "insight": "Simon sieht eine Sünderin, Jesus sieht eine Frau, die liebt. Mit dem kurzen Gleichnis von den zwei Schuldnern dreht er die Lage um: Nicht die Frau wird geprüft, sondern Simon. Ihre Liebe ist nicht die Bedingung der Vergebung, sondern deren Echo. Wer meint, wenig Vergebung zu brauchen, liebt wenig.",
+      "questions": [
+        "Mit wem identifizierst du dich eher: mit Simon, der beurteilt, oder mit der Frau, die nichts zu verlieren hat?",
+        "Wie bewusst ist dir, wie viel dir vergeben wurde – und wie zeigt sich das in deiner Liebe zu Jesus?"
+      ],
+      "action": "Drück Jesus deine Dankbarkeit heute auf eine Weise aus, die dich etwas kostet: Zeit, ein Lied, eine Gabe.",
+      "prayer": "Jesus, mir ist viel vergeben. Lass meine Liebe zu dir daran wachsen.",
+      "verse": { "ref": "Psalm 34,19", "src": "Ps 34:18" }
+    },
+    {
+      "ref": "Johannes 20,19-29",
+      "src": "John 20:19-29",
+      "title": "Thomas",
+      "background": "Es ist der Abend des Auferstehungstags; die Jünger haben sich aus Angst eingeschlossen. Thomas trägt den Beinamen «Zwilling». Ein Feigling war er nicht: Als Jesus in das gefährliche Judäa zurückkehren wollte, sagte er: «Lasst uns mitziehen, dass wir mit ihm sterben» (11,16). Sein Satz «Mein Herr und mein Gott» ist das klarste Bekenntnis im ganzen Evangelium.",
+      "context": "Am Abendmahlstisch hatte Thomas gefragt: «Herr, wir wissen nicht, wo du hingehst; wie können wir den Weg wissen?» Die Antwort war: «Ich bin der Weg» (14,5-6). Direkt nach dieser Szene nennt Johannes den Zweck seines Buches (20,31).",
+      "insight": "Thomas fehlt, als Jesus kommt – und verpasst die Begegnung. Zweifel wächst leicht in der Isolation. Eine Woche später ist er wieder bei den anderen. Jesus kommt eigens für ihn zurück und bietet ihm genau das an, was er verlangt hat. Er kennt die Zweifel und beschämt sie nicht. Das letzte Wort gilt uns: Selig, die nicht sehen und doch glauben.",
+      "questions": [
+        "Welche Frage oder welcher Zweifel beschäftigt dich im Moment ehrlich?",
+        "Ziehst du dich mit Zweifeln eher zurück – oder bleibst du wie Thomas in der Gemeinschaft?"
+      ],
+      "action": "Sprich deinen Zweifel heute vor Gott oder vor einem vertrauten Menschen offen aus.",
+      "prayer": "Mein Herr und mein Gott. Ich glaube – komm mir in meinen Fragen entgegen.",
+      "verse": {
+        "ref": "Johannes 14,6",
+        "src": "John 14:6",
+        "trim": { "luth1912": { "from": "Ich bin der Weg" }, "elb1905": { "from": "Ich bin der Weg" } }
+      }
+    }
+  ]
+}

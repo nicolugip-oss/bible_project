@@ -1,0 +1,122 @@
+{
+  "id": "heiliger-geist",
+  "title": "Kraft von oben",
+  "theme": "Heiliger Geist",
+  "intro": "Jesus hat seinen Nachfolgern nicht nur einen Auftrag gegeben, sondern auch die Kraft dazu. Diese Woche geht es um den Heiligen Geist: wer er ist, was er schenkt und wie er dich verändert.",
+  "icf": "Heiliger Geist",
+  "days": [
+    {
+      "ref": "Apostelgeschichte 1,1-11",
+      "src": "Acts 1:1-11",
+      "title": "Ihr werdet Kraft empfangen",
+      "background": "Lukas widmet beide Bände einem Mann namens Theophilus («Gottesfreund»), vermutlich einem hochgestellten Römer. Zwischen Auferstehung und Himmelfahrt liegen vierzig Tage. Die Jünger erwarten noch ein politisches Reich für Israel. Jesus weitet ihren Horizont: Jerusalem, Judäa, Samarien, Ende der Erde – das ist zugleich das Inhaltsverzeichnis der Apostelgeschichte.",
+      "context": "Das Lukasevangelium endet mit der Himmelfahrt, die Apostelgeschichte beginnt mit ihr. Der erste Band erzählt, was Jesus «anfing, zu tun und zu lehren» – der zweite, was er durch den Geist fortsetzt.",
+      "insight": "Der Auftrag ist riesig, aber die erste Anweisung lautet: warten. Ohne den Geist sollen die Jünger nicht losziehen. Das griechische Wort für Kraft ist «dynamis». Sie wird nicht für das eigene Wohlbefinden gegeben, sondern damit Menschen Zeugen werden. Die zwei Männer in weissen Kleidern beenden das Starren in den Himmel: Er kommt wieder – bis dahin gibt es zu tun.",
+      "questions": [
+        "Wo versuchst du, Gottes Auftrag aus eigener Kraft zu erfüllen?",
+        "Was ist dein «Jerusalem» – der Ort ganz in deiner Nähe, an dem du Zeuge sein sollst?"
+      ],
+      "action": "Bitte Gott heute konkret um die Kraft seines Geistes für eine Aufgabe, die dich überfordert.",
+      "prayer": "Herr, ohne deinen Geist kann ich dein Zeuge nicht sein. Erfülle mich mit deiner Kraft.",
+      "verse": {
+        "ref": "Apostelgeschichte 1,8",
+        "src": "Acts 1:8",
+        "trim": { "luth1912": { "from": "ihr werdet die Kraft" } }
+      }
+    },
+    {
+      "ref": "Apostelgeschichte 2,1-21",
+      "src": "Acts 2:1-21",
+      "title": "Pfingsten",
+      "background": "Pfingsten (griechisch «pentekoste», der fünfzigste Tag) ist das jüdische Wochenfest, fünfzig Tage nach dem Passa. Es war ein Erntefest und wurde später auch mit der Gabe des Gesetzes am Sinai verbunden. Jerusalem war voller Pilger aus dem ganzen Mittelmeerraum. Die «dritte Stunde» ist neun Uhr morgens.",
+      "context": "Zehn Tage nach der Himmelfahrt sind etwa 120 Menschen versammelt und beten (1,14-15). Petrus, der Jesus sieben Wochen zuvor verleugnet hat, steht auf und predigt öffentlich. Am Ende des Tages kommen etwa dreitausend Menschen zum Glauben.",
+      "insight": "Wind und Feuer erinnern an den Sinai, und das Sprachenwunder kehrt Babel um: Dort trennte die Sprache die Menschen, hier hört jeder die Botschaft in seiner Muttersprache. Petrus zitiert den Propheten Joel: Der Geist ist nicht mehr für wenige Auserwählte reserviert. Söhne und Töchter, Junge und Alte, Knechte und Mägde – alle.",
+      "questions": [
+        "Was löst der Gedanke aus, dass der Geist Gottes ausdrücklich auch für dich ausgegossen ist?",
+        "Wem müsstest du von Gott so erzählen, dass er es «in seiner Sprache» versteht?"
+      ],
+      "action": "Überlege dir, wie du deinen Glauben einer bestimmten Person in ihren Worten erklären würdest – ohne fromme Fachbegriffe.",
+      "prayer": "Heiliger Geist, komm. Mach aus meiner Zurückhaltung Mut, so wie bei Petrus.",
+      "verse": {
+        "ref": "Sacharja 4,6",
+        "src": "Zech 4:6",
+        "trim": { "luth1912": { "from": "Es soll nicht durch Heer" }, "elb1905": { "from": "Nicht durch Macht" } }
+      }
+    },
+    {
+      "ref": "Johannes 14,15-27",
+      "src": "John 14:15-27",
+      "title": "Der Beistand",
+      "background": "Jesus spricht diese Worte am letzten Abend vor seinem Tod. Das griechische Wort «Parakletos» (Luther: «Tröster») bezeichnet jemanden, der herbeigerufen wird, um beizustehen – etwa als Anwalt vor Gericht. Jesus sagt «einen andern Tröster»: Der erste war er selbst.",
+      "context": "Die Abschiedsreden (Kapitel 13–17) bereiten die Jünger auf die Zeit vor, in der Jesus nicht mehr sichtbar bei ihnen ist. Sie sind verunsichert – Jesus antwortet mit einem Versprechen.",
+      "insight": "Bisher war Jesus bei den Jüngern. Der Geist wird in ihnen sein – näher geht es nicht. Vater und Sohn nehmen Wohnung beim Menschen (Vers 23). Liebe zu Jesus zeigt sich im Halten seiner Worte, und der Geist erinnert an sie. Der Friede, den Jesus gibt, hängt nicht an ruhigen Umständen: Er verspricht ihn wenige Stunden vor seiner Verhaftung.",
+      "questions": [
+        "In welcher Situation brauchst du gerade einen Beistand, der für dich eintritt?",
+        "Der Geist erinnert an die Worte von Jesus. Welches Wort hat er dir in letzter Zeit ins Gedächtnis gerufen?"
+      ],
+      "action": "Lade den Heiligen Geist heute vor einem schwierigen Gespräch oder einer Aufgabe bewusst ein: «Sei mein Beistand.»",
+      "prayer": "Jesus, danke für deinen Frieden und für den Tröster, der in mir wohnt. Mein Herz soll sich nicht fürchten.",
+      "verse": { "ref": "Johannes 14,27", "src": "John 14:27" }
+    },
+    {
+      "ref": "Galater 5,13-26",
+      "src": "Gal 5:13-26",
+      "title": "Frucht des Geistes",
+      "background": "In Galatien verlangten Lehrer, dass Christen aus anderen Völkern sich beschneiden lassen und das jüdische Gesetz halten. Paulus kämpft im ganzen Brief gegen das Gesetz als Heilsweg. «Fleisch» meint bei ihm nicht den Körper, sondern den Menschen, der ohne Gott um sich selbst kreist. «Wandeln» ist das alltägliche Wort für Gehen.",
+      "context": "Nach vier Kapiteln über die Freiheit klärt Paulus ein Missverständnis: Freiheit ist kein Freibrief. Wer nicht mehr unter dem Gesetz steht, lebt nicht regellos, sondern vom Geist geführt.",
+      "insight": "Paulus spricht von «Werken» des Fleisches, aber von der «Frucht» des Geistes. Werke stellt man her, Frucht wächst – aus der Verbindung mit der Quelle. Und Frucht steht in der Einzahl: keine Auswahlliste, sondern ein Charakter mit neun Seiten. Der Weg dahin ist unspektakulär: mit dem Geist Schritt halten, einen Schritt nach dem andern.",
+      "questions": [
+        "Welche Seite der Frucht ist bei dir in letzter Zeit gewachsen – und welche vermissen andere am ehesten an dir?",
+        "Wo benutzt du deine Freiheit, um dir selbst zu dienen statt anderen?"
+      ],
+      "action": "Frag eine Person, die dich gut kennt: «Welche Seite der Frucht des Geistes siehst du bei mir, welche weniger?»",
+      "prayer": "Heiliger Geist, lass in mir wachsen, was ich nicht selbst herstellen kann. Ich will mit dir Schritt halten.",
+      "verse": { "ref": "Galater 5,22-23", "src": "Gal 5:22-23" }
+    },
+    {
+      "ref": "Römer 8,1-11",
+      "src": "Rom 8:1-11",
+      "title": "Leben im Geist",
+      "background": "In Kapitel 7 beschreibt Paulus den zermürbenden Kampf des Menschen, der das Gute will und es nicht schafft. Dort kommt der Heilige Geist kaum vor – in Kapitel 8 rund zwanzigmal. «Gesetz» kann bei Paulus auch «Prinzip» bedeuten: Ein stärkeres Prinzip, der Geist des Lebens, hat das Prinzip von Sünde und Tod entmachtet.",
+      "context": "Römer 8 ist ein Höhepunkt des Briefs. Es beginnt mit dem Freispruch («nichts Verdammliches») und beschreibt dann, wie das neue Leben praktisch möglich wird: durch den Geist, der in den Glaubenden wohnt.",
+      "insight": "Was das Gesetz fordern, aber nicht bewirken konnte, hat Gott selbst getan: Er sandte seinen Sohn. Christsein heisst darum nicht, sich mehr anzustrengen, sondern von einer anderen Kraft zu leben. Worauf du deine Gedanken ausrichtest, prägt dein Leben. Und in dir wohnt derselbe Geist, der Jesus von den Toten auferweckt hat.",
+      "questions": [
+        "Worum kreisen deine Gedanken, wenn sie nichts Bestimmtes zu tun haben?",
+        "Wo kämpfst du aus eigener Kraft gegen etwas an, statt die Kraft des Geistes in Anspruch zu nehmen?"
+      ],
+      "action": "Leg heute eine wiederkehrende Versuchung ausdrücklich vor Gott hin und bitte um die Kraft seines Geistes für den nächsten Moment, in dem sie kommt.",
+      "prayer": "Vater, danke: keine Verdammnis. Dein Geist wohnt in mir – lass mich aus seiner Kraft leben.",
+      "verse": { "ref": "2. Timotheus 1,7", "src": "2Tim 1:7" }
+    },
+    {
+      "ref": "1. Korinther 12,1-13",
+      "src": "1Cor 12:1-13",
+      "title": "Viele Gaben, ein Geist",
+      "background": "Korinth war eine wohlhabende Hafenstadt mit vielen Kulten, in denen ekstatische Erlebnisse als Zeichen göttlicher Nähe galten. Die junge Gemeinde übertrug dieses Denken: Wer auffälligere Gaben hatte, hielt sich für geistlicher. Das griechische «Charisma» kommt von «Charis», Gnade – eine Gabe ist ein Gnadengeschenk, keine Auszeichnung.",
+      "context": "Mit «Von den geistlichen Gaben aber» antwortet Paulus auf eine Frage aus Korinth. Die Kapitel 12–14 gehören zusammen: Vielfalt der Gaben, die Liebe als Massstab, Ordnung im Gottesdienst.",
+      "insight": "Der erste Test für das Wirken des Geistes ist nicht das Spektakuläre, sondern das Bekenntnis: Jesus ist Herr. Dann betont Paulus zweierlei: Jeder hat etwas bekommen, und niemand hat alles. Gaben sind zum gemeinsamen Nutzen da. Die Frage ist darum nicht «Wie begabt bin ich?», sondern «Wem dient, was ich bekommen habe?».",
+      "questions": [
+        "Welche Gabe hat Gott dir anvertraut – und wer profitiert im Moment davon?",
+        "Vergleichst du dich mit anderen und denkst, deine Gabe sei weniger wert?"
+      ],
+      "action": "Setz diese Woche eine deiner Gaben bewusst für jemand anderen ein – in der Church oder im Alltag.",
+      "prayer": "Heiliger Geist, danke für das, was du mir gegeben hast. Zeig mir, wo es gebraucht wird.",
+      "verse": { "ref": "1. Korinther 3,16", "src": "1Cor 3:16" }
+    },
+    {
+      "ref": "Hesekiel 37,1-14",
+      "src": "Ezek 37:1-14",
+      "title": "Totengebeine werden lebendig",
+      "background": "Hesekiel lebt unter den Verschleppten in Babylon. Jerusalem ist zerstört, der Tempel verbrannt. Das Volk sagt: «Unsere Hoffnung ist verloren» (Vers 11). Unbestattete Gebeine waren das Bild äusserster Schande und Endgültigkeit. Das hebräische Wort «ruach» bedeutet zugleich Wind, Atem und Geist – der Text spielt mit allen drei Bedeutungen.",
+      "context": "Im Kapitel davor verspricht Gott ein neues Herz und einen neuen Geist (36,26-27). Die Vision zeigt, wie radikal das gemeint ist: nicht Reparatur, sondern Auferweckung.",
+      "insight": "Gott fragt: Können diese Gebeine wieder lebendig werden? Hesekiel antwortet klug: «Herr, das weisst du wohl.» Dann geschieht das Wunder in zwei Schritten. Durch das Wort fügen sich Knochen, Sehnen und Haut – aber es ist noch kein Leben darin. Erst der Geist macht lebendig. Form ohne Geist bleibt leblos. Und keine Lage ist zu tot für Gottes Atem.",
+      "questions": [
+        "Was in deinem Leben sieht aus wie ein Feld voller verdorrter Gebeine – ohne Aussicht auf Veränderung?",
+        "Wo hast du die äussere Form des Glaubens, aber es fehlt der Atem?"
+      ],
+      "action": "Sprich über eine hoffnungslose Situation aus, was Gott in Vers 14 verspricht: Ich will meinen Geist in euch geben, dass ihr wieder leben sollt.",
+      "prayer": "Herr, du weisst es. Hauche Leben in das, was in mir vertrocknet ist.",
+      "verse": { "ref": "Hesekiel 36,26", "src": "Ezek 36:26" }
+    }
+  ]
+}

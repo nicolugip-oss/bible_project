@@ -1,0 +1,123 @@
+{
+  "id": "vertrauen",
+  "title": "Wenn Stürme kommen",
+  "theme": "Vertrauen",
+  "intro": "Glaube wird nicht bei Sonnenschein geprüft, sondern bei Gegenwind. Diese Woche geht es um Angst, Sorgen und die Frage, worauf du dich verlässt, wenn der Boden wackelt.",
+  "icf": "Vertrauen",
+  "days": [
+    {
+      "ref": "Markus 4,35-41",
+      "src": "Mark 4:35-41",
+      "title": "Mitten im Sturm",
+      "background": "Der See Genezareth liegt rund 200 Meter unter dem Meeresspiegel und ist von Bergen umgeben. Fallwinde können dort innert Minuten heftige Stürme auslösen. Mehrere Jünger waren Berufsfischer und kannten den See – ihre Panik zeigt, wie ernst die Lage war. Nur Markus erwähnt das Kissen, auf dem Jesus schlief: ein Detail wie von einem Augenzeugen.",
+      "context": "Jesus hat den ganzen Tag vom Boot aus Gleichnisse über das Reich Gottes erzählt. Am Abend sagt er: «Lasst uns hinüberfahren.» Der Sturm trifft die Jünger also nicht auf einem Irrweg, sondern mitten im Gehorsam.",
+      "insight": "Die Frage der Jünger ist schmerzhaft ehrlich: Fragst du nichts danach, dass wir verderben? Jesus weist sie dafür nicht ab, er steht auf. Dann stellt er die Gegenfrage nach ihrem Glauben. Am Ende ist die Furcht vor ihm grösser als die vor dem Sturm: Wer ist dieser? Der im Boot ist, ist stärker als das, was das Boot bedroht.",
+      "questions": [
+        "In welcher Situation hast du Gott schon gefragt: «Kümmert es dich nicht?»",
+        "Was ändert sich an deinem Sturm, wenn du dir bewusst machst, dass Jesus mit im Boot ist?"
+      ],
+      "action": "Benenne deinen aktuellen «Sturm» in einem Satz und sprich darüber laut aus: «Jesus, du bist mit im Boot.»",
+      "prayer": "Jesus, auch Wind und Meer gehorchen dir. Sprich dein «Schweig und verstumme» in meine Unruhe.",
+      "verse": { "ref": "Jesaja 41,10", "src": "Isa 41:10" }
+    },
+    {
+      "ref": "Psalm 46",
+      "src": "Ps 46",
+      "shift": 1,
+      "title": "Eine feste Burg",
+      "background": "Ein Lied der Söhne Korah, einer Gruppe von Tempelsängern. Viele Ausleger verbinden es mit der Belagerung Jerusalems durch die Assyrer im Jahr 701 v. Chr., als die Stadt über Nacht gerettet wurde (2. Könige 19). Martin Luther dichtete nach diesem Psalm sein Lied «Ein feste Burg ist unser Gott».",
+      "context": "Drei Strophen: Gott als Zuflucht im Chaos der Natur, Gott mitten in der bedrohten Stadt, Gott als Herr über die Völker. Zweimal erklingt der Refrain: «Der HERR Zebaoth ist mit uns.»",
+      "insight": "Der Psalm malt das Schlimmste aus: Berge sinken ins Meer, Königreiche fallen. Dagegen steht ein stiller Strom, der die Gottesstadt erfreut – dabei hatte Jerusalem gar keinen Fluss. Gemeint ist Gottes Gegenwart selbst. «Seid stille» heisst wörtlich: Lasst ab, hört auf zu kämpfen. Vertrauen beginnt, wo du die Hände öffnest.",
+      "questions": [
+        "Was ist deine erste Reaktion, wenn etwas ins Wanken gerät – kämpfen, fliehen, grübeln?",
+        "Was müsstest du loslassen, um heute still zu sein und zu erkennen, dass er Gott ist?"
+      ],
+      "action": "Sprich den Refrain «Der HERR Zebaoth ist mit uns» heute dreimal bewusst aus: morgens, mittags, abends.",
+      "prayer": "Gott, du bist meine Zuversicht und Stärke. Ich lasse los und vertraue, dass du Gott bist.",
+      "verse": {
+        "ref": "Psalm 46,2",
+        "src": "Ps 46:1",
+        "trim": { "luth1912": { "from": "Gott ist unsre Zuversicht" }, "elb1905": { "from": "Gott ist uns Zuflucht" } }
+      }
+    },
+    {
+      "ref": "Matthäus 14,22-33",
+      "src": "Matt 14:22-33",
+      "title": "Schritte auf dem Wasser",
+      "background": "Die «vierte Nachtwache» ist nach römischer Zählung die Zeit zwischen drei und sechs Uhr morgens – die Jünger rudern also seit Stunden gegen den Wind. Der Satz «Ich bin's» lautet griechisch «ego eimi» und erinnert an den Gottesnamen aus 2. Mose 3,14. Im Alten Testament ist es Gott allein, der über die Wogen des Meeres schreitet (Hiob 9,8).",
+      "context": "Gerade hat Jesus mehr als fünftausend Menschen satt gemacht. Er schickt die Jünger voraus und zieht sich allein auf einen Berg zurück, um zu beten. Dann kommt er ihnen in ihrer Not entgegen.",
+      "insight": "Petrus ist der Einzige, der aussteigt – und der Einzige, der erlebt, wie Wasser trägt. Er sinkt nicht wegen des Windes, der war vorher schon da, sondern weil er den Blick wechselt. Sein Gebet ist drei Worte lang: «Herr, hilf mir!» Jesus greift sofort zu. Erst kommt die Hand, dann die Frage nach dem Zweifel.",
+      "questions": [
+        "Wozu fordert Jesus dich heraus, «aus dem Boot zu steigen»?",
+        "Worauf richtet sich dein Blick im Moment stärker – auf den Wind oder auf Jesus?"
+      ],
+      "action": "Tu heute einen kleinen Schritt, den du aus Angst aufgeschoben hast: ein Gespräch, eine Zusage, eine Entscheidung.",
+      "prayer": "Herr, wenn du es bist, dann ruf mich. Und wenn ich sinke: Halt mich fest.",
+      "verse": { "ref": "Philipper 4,13", "src": "Phil 4:13" }
+    },
+    {
+      "ref": "Jesaja 40,25-31",
+      "src": "Isa 40:25-31",
+      "title": "Flügel wie Adler",
+      "background": "Israel sitzt im babylonischen Exil, umgeben von einer Kultur, die Sonne, Mond und Sterne als Götter verehrte. Jesaja dreht das um: Gott hat die Sterne geschaffen, er ruft sie alle mit Namen. Adler nutzen warme Aufwinde und gleiten, statt mit eigener Kraft zu flattern – ein Bild dafür, getragen zu werden.",
+      "context": "Mit Kapitel 40 beginnt der grosse Trostteil des Jesajabuchs. Das Volk klagt: «Mein Weg ist dem HERRN verborgen» (Vers 27). Die Antwort ist kein Tadel, sondern ein neuer Blick auf Gottes Grösse.",
+      "insight": "«Harren» ist kein passives Herumsitzen. Das hebräische Wort ist mit dem Wort für eine gespannte Schnur verwandt: sich ausstrecken, mit Erwartung festhalten. Bemerkenswert ist die Reihenfolge: fliegen, laufen, gehen. Die grösste Kraft braucht nicht der Höhenflug, sondern der Alltag, in dem man Schritt für Schritt nicht müde wird.",
+      "questions": [
+        "Wo denkst du gerade: «Gott sieht meinen Weg nicht»?",
+        "Was würde es heute praktisch heissen, auf den Herrn zu harren, statt aus eigener Kraft zu flattern?"
+      ],
+      "action": "Geh heute bewusst nach draussen, schau in den Himmel und mach dir klar: Der das geschaffen hat, wird nicht müde – und kennt deinen Namen.",
+      "prayer": "Ewiger Gott, du wirst nicht müde. Gib mir neue Kraft für den nächsten Schritt.",
+      "verse": { "ref": "Jesaja 40,31", "src": "Isa 40:31" }
+    },
+    {
+      "ref": "Psalm 23",
+      "src": "Ps 23",
+      "title": "Der gute Hirte",
+      "background": "David war selbst Hirte, bevor er König wurde. Ein Hirte im Bergland Judas führte seine Herde durch enge, schattige Schluchten zu neuen Weideplätzen. Der Stecken war eine Keule zur Abwehr von Raubtieren, der Stab diente zum Führen und Zurückholen. Öl auf dem Haupt und ein voller Becher waren Zeichen dafür, dass ein Gastgeber seinen Gast ehrte.",
+      "context": "Der Psalm wechselt zweimal das Bild: vom Hirten (Vers 1–4) zum Gastgeber (Vers 5) und schliesslich zum Zuhause (Vers 6). Jesus greift das Hirtenbild auf: «Ich bin der gute Hirte» (Johannes 10,11).",
+      "insight": "Achte auf den Wechsel in Vers 4: Solange es um grüne Auen geht, redet David über Gott – «er». Im finsteren Tal redet er mit ihm – «du». In der Dunkelheit wird Glaube persönlich. Das Tal wird nicht umgangen, sondern durchquert. Und am Ende folgen dir nicht Feinde, sondern Gutes und Barmherzigkeit.",
+      "questions": [
+        "Erlebst du dich gerade eher auf der grünen Aue oder im finsteren Tal?",
+        "Was mangelt dir im Moment – und was sagt Vers 1 dazu?"
+      ],
+      "action": "Lies den Psalm heute Abend langsam als dein eigenes Gebet und mach bei jedem «mich» und «mir» eine kurze Pause.",
+      "prayer": "Herr, du bist mein Hirte. Führe mich heute – und bleib bei mir, wenn es dunkel wird.",
+      "verse": {
+        "ref": "Psalm 23,1-4",
+        "src": "Ps 23:1-4",
+        "trim": { "luth1912": { "from": "Der HERR ist mein Hirte" }, "elb1905": { "from": "Jehova ist mein Hirte" } }
+      }
+    },
+    {
+      "ref": "Matthäus 6,25-34",
+      "src": "Matt 6:25-34",
+      "title": "Sorgt euch nicht",
+      "background": "Die meisten Zuhörer von Jesus waren Tagelöhner, Fischer und Kleinbauern. Ihre Sorge um Essen und Kleidung war keine Luxussorge, sondern eine Existenzfrage. Die «Lilien» sind vermutlich wilde Feldblumen wie die Anemonen, die in Galiläa im Frühling für kurze Zeit die Hügel färben. Trockenes Gras diente als Brennmaterial für den Backofen.",
+      "context": "Direkt davor sagt Jesus: Niemand kann zwei Herren dienen, Gott und dem Mammon (Vers 24). Mit «Darum» schliesst er die Sorge an. Sie ist die Kehrseite derselben Frage: Wem vertraue ich meine Versorgung an?",
+      "insight": "Jesus verbietet nicht das Planen, sondern die Sorge, die das Herz zerreisst. Sein Argument geht vom Kleineren zum Grösseren: Wenn Gott Vögel ernährt und Blumen kleidet, wie viel mehr euch. Die Alternative zur Sorge ist nicht Gleichgültigkeit, sondern eine neue Priorität: zuerst Gottes Reich. Und jeder Tag bekommt nur seine eigene Last.",
+      "questions": [
+        "Welche Sorge um morgen raubt dir heute die Kraft?",
+        "Was würde sich in deinem Kalender oder Budget ändern, wenn Gottes Reich wirklich «am ersten» käme?"
+      ],
+      "action": "Beobachte heute bewusst einen Vogel oder eine Pflanze und sprich dabei aus: «Wie viel mehr sorgst du für mich.»",
+      "prayer": "Vater, du weisst, was ich brauche. Ich will zuerst nach deinem Reich fragen und dir den Rest überlassen.",
+      "verse": { "ref": "Matthäus 6,33", "src": "Matt 6:33" }
+    },
+    {
+      "ref": "Sprüche 3,1-12",
+      "src": "Prov 3:1-12",
+      "title": "Von ganzem Herzen",
+      "background": "Die Sprüche sind als Unterweisung eines Vaters an seinen Sohn gestaltet. «Herz» meint im Hebräischen nicht nur das Gefühl, sondern die Schaltzentrale der Person: Denken, Wollen, Entscheiden. Die «Erstlinge» (Vers 9) waren der erste Teil der Ernte, den Israel Gott brachte – als Zeichen, dass alles von ihm kommt.",
+      "context": "Kapitel 1–9 bilden die Einleitung des Sprüchebuchs: lange Lehrreden über den Wert der Weisheit. In diesem Abschnitt folgt auf jede Aufforderung eine Zusage.",
+      "insight": "Vertrauen und Verstand sind keine Gegner – aber der Verstand soll nicht das Fundament sein, auf das du dich stützt. «In allen deinen Wegen» schliesst Beruf, Geld und Beziehungen ein, nicht nur den Sonntag. Selbst Korrektur gehört dazu: Wen der Herr liebt, den weist er zurecht – wie ein Vater sein Kind.",
+      "questions": [
+        "In welchem Lebensbereich verlässt du dich vor allem auf deine eigene Einschätzung?",
+        "Wo hat Gott dich schon einmal durch einen unbequemen Umweg oder eine Korrektur gut geführt?"
+      ],
+      "action": "Steht eine Entscheidung an? Bete heute ausdrücklich darüber, bevor du Pro und Contra abwägst.",
+      "prayer": "Herr, ich vertraue dir von ganzem Herzen. Zeig mir den Weg – auch dort, wo mein Verstand nicht ausreicht.",
+      "verse": { "ref": "Sprüche 3,5-6", "src": "Prov 3:5-6" }
+    }
+  ]
+}

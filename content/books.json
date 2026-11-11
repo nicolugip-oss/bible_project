@@ -1,0 +1,126 @@
+{
+  "Gen": {
+    "name": "1. Mose",
+    "intro": "Das Buch der Anfänge: Schöpfung, Sündenfall, Sintflut und die Geschichte der Erzväter Abraham, Isaak, Jakob und Josef. Die Tradition schreibt es Mose zu. Ab Kapitel 12 beginnt Gottes Rettungsplan mit einer einzigen Familie."
+  },
+  "Exod": {
+    "name": "2. Mose",
+    "intro": "Erzählt die Befreiung Israels aus der Sklaverei in Ägypten, den Bundesschluss am Sinai und den Bau der Stiftshütte. Der Auszug ist das Schlüsselereignis des Alten Testaments – Propheten, Psalmen und das Neue Testament beziehen sich immer wieder darauf."
+  },
+  "Josh": {
+    "name": "Josua",
+    "intro": "Nach Moses Tod führt Josua das Volk über den Jordan ins verheissene Land. Das Buch schildert Eroberung und Verteilung Kanaans und endet mit Josuas Entscheidung: «Ich aber und mein Haus wollen dem HERRN dienen.»"
+  },
+  "1Sam": {
+    "name": "1. Samuel",
+    "intro": "Der Übergang von der Richterzeit zum Königtum (11. Jahrhundert v. Chr.). Im Mittelpunkt stehen der Prophet Samuel, der erste König Saul und der junge David, den Gott als Mann nach seinem Herzen erwählt."
+  },
+  "1Kgs": {
+    "name": "1. Könige",
+    "intro": "Von Salomos Glanzzeit und dem Tempelbau über die Teilung des Reichs (um 930 v. Chr.) bis zum Propheten Elia. Das Buch misst jeden König an einer Frage: Hält er an Gott fest oder läuft er den Götzen nach?"
+  },
+  "Ps": {
+    "name": "Psalmen",
+    "intro": "Das Gebets- und Liederbuch Israels: 150 Psalmen aus mehreren Jahrhunderten, viele von David. Klage, Dank, Lob und Vertrauen stehen dicht beieinander. Auch Jesus betete die Psalmen – am Kreuz spricht er Worte aus Psalm 22 und 31."
+  },
+  "Prov": {
+    "name": "Sprüche",
+    "intro": "Eine Sammlung von Weisheitssprüchen, grösstenteils König Salomo zugeschrieben (10. Jahrhundert v. Chr.). Kurze, einprägsame Sätze für den Alltag: Worte, Geld, Arbeit, Beziehungen. Leitmotiv: Die Furcht des HERRN ist der Anfang der Weisheit."
+  },
+  "Eccl": {
+    "name": "Prediger",
+    "intro": "Der «Prediger» (hebräisch Kohelet) prüft, was im Leben trägt: Arbeit, Genuss, Wissen, Reichtum. Sein nüchternes Fazit «es ist alles ganz eitel» führt zur Frage nach dem, was bleibt: Gott fürchten und das Leben als Geschenk annehmen."
+  },
+  "Isa": {
+    "name": "Jesaja",
+    "intro": "Jesaja wirkte ab etwa 740 v. Chr. in Jerusalem. Sein Buch spannt den Bogen von Gericht über Trost bis zur neuen Schöpfung. Kaum ein Prophet wird im Neuen Testament häufiger zitiert; die Lieder vom Gottesknecht weisen auf Jesus."
+  },
+  "Jer": {
+    "name": "Jeremia",
+    "intro": "Jeremia predigte rund vierzig Jahre in Jerusalem, bis die Stadt 587/586 v. Chr. von Babylon zerstört wurde. Man nennt ihn den weinenden Propheten. Mitten im Gericht kündigt er einen neuen Bund an, den Gott ins Herz schreibt."
+  },
+  "Lam": {
+    "name": "Klagelieder",
+    "intro": "Fünf Klagegedichte über die Zerstörung Jerusalems 587/586 v. Chr., traditionell Jeremia zugeschrieben. Vier davon folgen kunstvoll dem hebräischen Alphabet. Genau in der Mitte des Buches leuchtet Hoffnung auf: Gottes Erbarmen hört nicht auf."
+  },
+  "Ezek": {
+    "name": "Hesekiel",
+    "intro": "Hesekiel war Priester und wurde 597 v. Chr. nach Babylon verschleppt. Dort, fern vom Tempel, empfängt er gewaltige Visionen. Seine Botschaft: Gott ist nicht an einen Ort gebunden – und er schenkt seinem Volk ein neues Herz."
+  },
+  "Dan": {
+    "name": "Daniel",
+    "intro": "Daniel wird als junger Mann nach Babylon verschleppt und dient dort an heidnischen Königshöfen. Die erste Hälfte des Buches erzählt von Treue unter Druck, die zweite enthält Visionen über Gottes Herrschaft über alle Reiche."
+  },
+  "Zeph": {
+    "name": "Zefanja",
+    "intro": "Zefanja wirkte zur Zeit des Königs Josia (um 630 v. Chr.). Er kündigt den «Tag des HERRN» als Gericht an – und endet mit einem der zärtlichsten Bilder des Alten Testaments: Gott freut sich jubelnd über sein Volk."
+  },
+  "Matt": {
+    "name": "Matthäus",
+    "intro": "Geschrieben vor allem für jüdische Leser: Matthäus zeigt Jesus als den verheissenen Messias und zitiert dazu häufig das Alte Testament. Fünf grosse Reden gliedern das Buch, darunter die Bergpredigt (Kapitel 5–7)."
+  },
+  "Mark": {
+    "name": "Markus",
+    "intro": "Das kürzeste und vermutlich älteste Evangelium, nach früher Überlieferung von Johannes Markus nach den Berichten des Petrus verfasst. Schnelles Erzähltempo, viel Handlung: Jesus ist gekommen, um zu dienen und sein Leben zu geben (10,45)."
+  },
+  "Luke": {
+    "name": "Lukas",
+    "intro": "Lukas, Arzt und Begleiter des Paulus, hat nach eigenen Angaben sorgfältig recherchiert (1,1-4). Er betont die Zuwendung von Jesus zu Armen, Frauen, Zöllnern und Aussenseitern. Die Fortsetzung ist die Apostelgeschichte."
+  },
+  "John": {
+    "name": "Johannes",
+    "intro": "Das vierte Evangelium, nach der Überlieferung vom Apostel Johannes gegen Ende des 1. Jahrhunderts geschrieben. Sieben Zeichen und sieben «Ich bin»-Worte zeigen, wer Jesus ist. Das Ziel nennt 20,31: dass ihr glaubt und durch den Glauben das Leben habt."
+  },
+  "Acts": {
+    "name": "Apostelgeschichte",
+    "intro": "Der zweite Band des Lukas: vom Pfingsttag in Jerusalem bis zur Ankunft des Paulus in Rom (etwa 30–62 n. Chr.). Das Buch zeigt, wie der Heilige Geist aus einer kleinen Gruppe eine Bewegung macht, die Grenzen überschreitet."
+  },
+  "Rom": {
+    "name": "Römer",
+    "intro": "Paulus schreibt um 57 n. Chr. aus Korinth an die Gemeinde in Rom, die er noch nicht kennt. Der Brief ist seine gründlichste Darstellung des Evangeliums: Alle brauchen Gnade, Gott schenkt sie in Christus, der Geist macht ein neues Leben möglich."
+  },
+  "1Cor": {
+    "name": "1. Korinther",
+    "intro": "Paulus gründete die Gemeinde in der Hafenstadt Korinth um 50 n. Chr. Wenige Jahre später antwortet er aus Ephesus auf Spaltungen, Streitfragen und Unordnung im Gottesdienst. Höhepunkte sind Kapitel 13 (Liebe) und 15 (Auferstehung)."
+  },
+  "2Cor": {
+    "name": "2. Korinther",
+    "intro": "Der persönlichste Brief des Paulus, um 55/56 n. Chr. geschrieben. Er verteidigt seinen Dienst gegen Kritiker und zeigt offen seine Schwäche. Grundton: Gottes Kraft kommt gerade in zerbrechlichen Menschen zum Ziel."
+  },
+  "Gal": {
+    "name": "Galater",
+    "intro": "Ein leidenschaftlicher Brief an Gemeinden in Galatien (heutige Türkei). Lehrer verlangten dort, dass Christen zusätzlich das jüdische Gesetz halten. Paulus hält dagegen: Gerecht wird man allein durch den Glauben – und der Geist macht frei."
+  },
+  "Eph": {
+    "name": "Epheser",
+    "intro": "Paulus schreibt aus der Gefangenschaft (um 60–62 n. Chr.), wahrscheinlich als Rundbrief an Gemeinden rund um Ephesus. Kapitel 1–3 entfalten, was Gott in Christus geschenkt hat; Kapitel 4–6 zeigen, wie dieses neue Leben im Alltag aussieht."
+  },
+  "Phil": {
+    "name": "Philipper",
+    "intro": "Ein Dankesbrief aus dem Gefängnis an die Gemeinde in Philippi, die erste auf europäischem Boden (Apostelgeschichte 16). Obwohl Paulus in Ketten liegt, ist Freude das Leitwort: Sie hängt an Christus, nicht an den Umständen."
+  },
+  "Col": {
+    "name": "Kolosser",
+    "intro": "Paulus schreibt aus der Haft an die Gemeinde in Kolossä, die sein Mitarbeiter Epaphras gegründet hatte. Gegen Lehren, die Christus ergänzen wollten, betont er: In Christus wohnt die ganze Fülle Gottes – ihr habt in ihm alles."
+  },
+  "1Pet": {
+    "name": "1. Petrus",
+    "intro": "Petrus schreibt in den 60er-Jahren an verstreute Christen in Kleinasien, die wegen ihres Glaubens unter Druck stehen. Er nennt sie «Fremdlinge» und ermutigt sie zu lebendiger Hoffnung und einem Lebensstil, der Fragen weckt."
+  },
+  "Heb": {
+    "name": "Hebräer",
+    "intro": "Ein unbekannter Verfasser schreibt an Christen mit jüdischem Hintergrund, die müde geworden sind und zurück ins Alte wollen. Der Brief zeigt: Jesus ist grösser als Engel, Mose und das Priestertum – darum haltet durch."
+  },
+  "Jas": {
+    "name": "Jakobus",
+    "intro": "Jakobus, ein Bruder von Jesus und Leiter der Gemeinde in Jerusalem, schreibt einen der frühesten Briefe des Neuen Testaments. Sehr praktisch und mit vielen Anklängen an die Bergpredigt: Echter Glaube zeigt sich im Tun."
+  },
+  "1John": {
+    "name": "1. Johannes",
+    "intro": "Der Apostel Johannes schreibt im hohen Alter (um 90 n. Chr.) an Gemeinden, die durch Irrlehrer verunsichert sind. Er nennt Kennzeichen echten Glaubens: an Jesus festhalten, Gottes Gebote halten, einander lieben."
+  },
+  "Rev": {
+    "name": "Offenbarung",
+    "intro": "Johannes empfängt auf der Insel Patmos Visionen für sieben Gemeinden in Kleinasien, vermutlich um 95 n. Chr. unter Kaiser Domitian. In starken Bildern zeigt das Buch: Das Lamm hat gesiegt, und Gott macht am Ende alles neu."
+  }
+}

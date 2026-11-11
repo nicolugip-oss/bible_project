@@ -1,0 +1,26 @@
+{
+  "updated": null,
+  "channel": {
+    "title": "ICF Zürich",
+    "url": "https://icf.ch/youtube"
+  },
+  "videos": [],
+  "links": [
+    {
+      "label": "Website von ICF Zürich",
+      "url": "https://icf.church/zuerich"
+    },
+    {
+      "label": "Celebrations: Zeiten und Orte",
+      "url": "https://icf.church/zuerich/celebrations"
+    },
+    {
+      "label": "YouTube-Kanal",
+      "url": "https://icf.ch/youtube"
+    },
+    {
+      "label": "Podcast mit den Predigten",
+      "url": "https://icf.church/zuerich/en/podcast"
+    }
+  ]
+}
