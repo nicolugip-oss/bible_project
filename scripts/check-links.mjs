@@ -28,8 +28,8 @@ async function check(label, url) {
   try {
     const res = await fetch(url, { headers: HEADERS, redirect: 'follow', signal: AbortSignal.timeout(20_000) });
     const html = await res.text();
-    const title = (/<title[^>]*>([^<]*)<\/title>/i.exec(html)?.[1] || '').replace(/\s+/g, ' ').trim().slice(0, 110);
-    console.log(`${res.status} | ${label} | ${url}${res.url !== url ? ` -> ${res.url}` : ''} | ${title}`);
+    const heading = (/<h1[^>]*>([^<]*)</i.exec(html)?.[1] || /<title[^>]*>([^<]*)<\/title>/i.exec(html)?.[1] || '').replace(/\s+/g, ' ').trim().slice(0, 80);
+    console.log(`${res.status} | ${label} | ${url}${res.url !== url ? ` -> ${res.url}` : ''} | ${heading}`);
     return res.ok;
   } catch (err) {
     console.log(`FEHLER | ${label} | ${url} | ${err.message}`);
@@ -50,23 +50,6 @@ for (const id of SAMPLE) {
 }
 for (const link of icf.links) {
   if (!(await check(link.label, link.url))) failed++;
-}
-
-// Vorübergehende Diagnose: Wie verhält sich bible.com bei Versbereichen?
-for (const url of [
-  'https://www.bible.com/bible/73/1JN.4.7-19.HFA',
-  'https://www.bible.com/bible/73/1JN.4.7.HFA',
-  'https://www.bible.com/bible/73/1JN.4.HFA',
-  'https://www.bible.com/bible/73/PSA.23.1-4.HFA',
-  'https://www.bible.com/bible/73/JHN.3.16-17.HFA',
-  'https://www.bible.com/de/bible/73/JHN.3.16-17.HFA',
-  'https://www.bible.com/bible/111/JHN.3.16-17.NIV',
-]) {
-  const res = await fetch(url, { headers: HEADERS, redirect: 'follow', signal: AbortSignal.timeout(20_000) });
-  const html = await res.text();
-  const pick = (re) => (re.exec(html)?.[1] || '').slice(0, 90);
-  console.log(`DIAG ${res.status} ${url} -> ${res.url}`);
-  console.log(`  bytes=${html.length} usfm=${(html.match(/data-usfm="/g) || []).length} canonical=${pick(/<link rel="canonical" href="([^"]+)"/)} og=${pick(/property="og:title" content="([^"]+)"/)} h1=${pick(/<h1[^>]*>([^<]*)</)} notfound=${/404|nicht gefunden|not found/i.test(html)}`);
 }
 
 console.log(failed ? `${failed} Links nicht erreichbar.` : 'Alle geprüften Links erreichbar.');
