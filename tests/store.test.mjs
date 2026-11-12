@@ -11,6 +11,13 @@ test('sanitize repariert beschädigte Stände', () => {
   assert.deepEqual(sanitize(null, '2026-11-11'), defaults('2026-11-11'));
 });
 
+test('sanitize behält eingefügte Verse und die Textanzeige, verwirft leere Einträge', () => {
+  const s = sanitize({ custom: { 'John 3:16': 'Ein eingefügter Vers.', 'Ps 23:1': '  ', 'Rom 8:28': 5 }, showText: true }, '2026-11-11');
+  assert.deepEqual(s.custom, { 'John 3:16': 'Ein eingefügter Vers.' });
+  assert.equal(s.showText, true);
+  assert.equal(sanitize({ showText: 'ja' }, '2026-11-11').showText, false);
+});
+
 test('Sicherung lässt sich wieder einlesen', () => {
   const state = { ...defaults('2026-11-01'), done: { 0: '2026-11-01' }, notes: { 0: 'Notiz «mit» Zeichen' } };
   assert.deepEqual(importText(exportText(state), '2026-11-11'), state);

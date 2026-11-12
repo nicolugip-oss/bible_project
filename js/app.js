@@ -60,6 +60,15 @@ async function boot() {
     canEmbed: !window.MANNA_PREVIEW,
     storageOk: undefined,
 
+    /** Wortlaut des Lernverses: selbst eingefügt oder aus der gewählten Übersetzung. */
+    verseText(day) {
+      return ctx.state.custom[day.verse.key] || ctx.text.verses[day.id];
+    },
+
+    verseSource(day) {
+      return ctx.state.custom[day.verse.key] ? 'dein eingefügter Wortlaut' : plan.translations[ctx.state.translation].short;
+    },
+
     syncDay() {
       ctx.today = todayISO();
       ctx.n = dayNumber(ctx.state.start, ctx.today);

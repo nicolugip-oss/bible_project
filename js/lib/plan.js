@@ -29,24 +29,6 @@ export function dateFor(startISO, n) {
   return addDays(startISO, n);
 }
 
-export const LINK_TRANSLATIONS = [
-  { code: 'HFA', name: 'Hoffnung für alle' },
-  { code: 'LUT', name: 'Lutherbibel 2017' },
-  { code: 'NGÜ', name: 'Neue Genfer Übersetzung' },
-  { code: 'SLT', name: 'Schlachter 2000' },
-  { code: 'ELB', name: 'Elberfelder Bibel' },
-  { code: 'NLB', name: 'Neues Leben' },
-  { code: 'GNB', name: 'Gute Nachricht Bibel' },
-  { code: 'ZB', name: 'Zürcher Bibel' },
-  { code: 'EU', name: 'Einheitsübersetzung' },
-];
-
-/** Link zur Stelle auf BibleServer, z. B. "1. Johannes 4,7-19" -> …/HFA/1.Johannes4%2C7-19 */
-export function bibleServerUrl(ref, translation = 'HFA') {
-  const compact = ref.replace(/\s+/g, '');
-  return `https://www.bibleserver.com/${encodeURIComponent(translation)}/${encodeURIComponent(compact)}`;
-}
-
 /** YouTube-Suche nach Beiträgen von ICF Zürich zu einem Thema. */
 export function icfSearchUrl(topic) {
   return `https://www.youtube.com/results?search_query=${encodeURIComponent(`ICF Zürich ${topic}`)}`;

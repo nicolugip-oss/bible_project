@@ -1,8 +1,9 @@
 // Bereich «Lernvers»: Trainer zum Auswendiglernen und Wiederholen.
 
-import { h, icon } from '../lib/dom.js';
+import { BIBLE_APP, bibleAppUrl, cleanPastedVerse } from '../lib/bibleapp.js';
+import { extLink, h, icon } from '../lib/dom.js';
 import { formatShort } from '../lib/dates.js';
-import { INTERVALS, compareTyped, firstLetter, hiddenWords, isDue, rate, status, tokenize } from '../lib/memory.js';
+import { INTERVALS, compareTyped, firstLetter, hiddenWords, isDue, rate, status, tokenize, wordCount } from '../lib/memory.js';
 
 
 const MODES = [
@@ -22,7 +23,7 @@ const LEVELS = [
 const STATUS_LABEL = { new: 'Neu', learning: 'Am Lernen', solid: 'Sitzt' };
 
 export function newTrainer(index) {
-  return { index, mode: 'read', level: 0, seed: 1, revealed: new Set(), showAll: false, typed: '', result: null };
+  return { index, mode: 'read', level: 0, seed: 1, revealed: new Set(), showAll: false, typed: '', result: null, editing: false };
 }
 
 function segmented(label, options, current, onPick) {
@@ -129,6 +130,64 @@ function typeMode(ctx, text) {
   );
 }
 
+/** Eigener Wortlaut: Vers aus der Bibel App kopieren und hier einfügen. */
+function wordingEditor(ctx, day) {
+  const t = ctx.trainer;
+  const key = day.verse.key;
+  const custom = ctx.state.custom[key];
+  const reset = () => Object.assign(t, { editing: false, revealed: new Set(), showAll: false, typed: '', result: null });
+
+  const field = h('textarea', {
+    id: 'custom-verse',
+    class: 'note',
+    rows: '4',
+    spellcheck: 'false',
+    placeholder: 'Kopierten Vers hier einfügen …',
+  });
+  field.value = custom || '';
+
+  return h(
+    'div',
+    { class: 'editor' },
+    h('label', { for: 'custom-verse' }, `Wortlaut für ${day.verse.ref}`),
+    field,
+    h('p', { class: 'hint' }, `Öffne den Vers in der Bibel App, kopiere ihn und füge ihn hier ein. Stellenangabe und Link entfernt die App von selbst. Der Text bleibt auf diesem Gerät.`),
+    h(
+      'div',
+      { class: 'row' },
+      h('button', {
+        class: 'btn btn-primary',
+        type: 'button',
+        onclick: () => {
+          const cleaned = cleanPastedVerse(field.value);
+          if (wordCount(cleaned) < 3) {
+            ctx.toast('Das ist noch kein ganzer Vers. Bitte den Text einfügen.');
+            return;
+          }
+          reset();
+          ctx.update((s) => { s.custom[key] = cleaned; }, 'Gespeichert. Du lernst den Vers jetzt in diesem Wortlaut.');
+        },
+      }, 'Speichern'),
+      h('button', {
+        class: 'linkbtn',
+        type: 'button',
+        onclick: () => {
+          t.editing = false;
+          ctx.render();
+        },
+      }, 'Abbrechen'),
+      custom && h('button', {
+        class: 'linkbtn',
+        type: 'button',
+        onclick: () => {
+          reset();
+          ctx.update((s) => { delete s.custom[key]; }, `Wieder im Wortlaut der ${ctx.plan.translations[ctx.state.translation].name}.`);
+        },
+      }, 'Eingefügten Wortlaut entfernen'),
+    ),
+  );
+}
+
 function ratingBar(ctx, key) {
   const st = ctx.state.verses[key];
   const choose = (rating, message) => () => {
@@ -179,7 +238,7 @@ function verseRow(ctx, index, { showDue = false } = {}) {
         'span',
         { class: 'verserow-main' },
         h('span', { class: 'verserow-ref' }, day.verse.ref),
-        h('span', { class: 'verserow-text' }, ctx.text.verses[day.id]),
+        h('span', { class: 'verserow-text' }, ctx.verseText(day)),
       ),
       h(
         'span',
@@ -193,7 +252,7 @@ function verseRow(ctx, index, { showDue = false } = {}) {
 export function renderVerse(ctx) {
   const t = ctx.trainer;
   const day = ctx.days[t.index];
-  const text = ctx.text.verses[day.id];
+  const text = ctx.verseText(day);
   const key = day.verse.key;
   const isTodays = t.index === ctx.todayIndex;
   const mode = MODES.find((m) => m.id === t.mode);
@@ -260,7 +319,21 @@ export function renderVerse(ctx) {
       h('p', { class: 'hint' }, mode.hint),
       t.mode === 'type' ? typeMode(ctx, text) : verseBody(ctx, text),
       controls.length > 0 && h('div', { class: 'row trainer-controls' }, controls),
-      h('p', { class: 'cite' }, `${day.verse.ref} · ${ctx.plan.translations[ctx.state.translation].short}`),
+      h('p', { class: 'cite' }, `${day.verse.ref} · ${ctx.verseSource(day)}`),
+      h(
+        'div',
+        { class: 'row trainer-links' },
+        extLink(bibleAppUrl(key.split(' ')[0], day.verse.ref), `In der Bibel App öffnen · ${BIBLE_APP.abbr}`, { class: 'linkbtn' }),
+        !t.editing && h('button', {
+          class: 'linkbtn',
+          type: 'button',
+          onclick: () => {
+            t.editing = true;
+            ctx.render();
+          },
+        }, ctx.state.custom[key] ? 'Wortlaut ändern' : `Wortlaut aus der ${BIBLE_APP.abbr} einfügen`),
+      ),
+      t.editing && wordingEditor(ctx, day),
     ),
 
     ratingBar(ctx, key),

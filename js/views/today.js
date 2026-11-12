@@ -1,8 +1,9 @@
 // Bereich «Heute»: Bibelstelle des Tages mit Hintergrund, Kontext und Gedankenanstössen.
 
 import { extLink, h, icon } from '../lib/dom.js';
+import { BIBLE_APP, bibleAppUrl } from '../lib/bibleapp.js';
 import { formatLong, formatShort } from '../lib/dates.js';
-import { LINK_TRANSLATIONS, bibleServerUrl, dateFor, entryFor, icfSearchUrl, readingMinutes } from '../lib/plan.js';
+import { dateFor, entryFor, icfSearchUrl, readingMinutes } from '../lib/plan.js';
 
 const POETRY = new Set(['Ps', 'Prov', 'Lam', 'Eccl']);
 
@@ -36,7 +37,6 @@ function weekStrip(ctx, n) {
 function scripture(ctx, day) {
   const verses = ctx.text.passages[day.id];
   const translation = ctx.plan.translations[ctx.state.translation];
-  const linkName = LINK_TRANSLATIONS.find((t) => t.code === ctx.state.linkTranslation)?.name || ctx.state.linkTranslation;
   const poetry = POETRY.has(day.book);
   const body = poetry
     ? h('div', { class: 'scripture-text is-poetry' }, verses.map(([num, text]) => h('p', {}, h('sup', { class: 'vn' }, num), text)))
@@ -48,13 +48,19 @@ function scripture(ctx, day) {
       'header',
       { class: 'scripture-head' },
       h('h2', { id: 'scripture-ref' }, day.ref),
-      h('span', { class: 'meta' }, `${translation.short} · ca. ${readingMinutes(verses)} Min.`),
+      h('span', { class: 'meta' }, `ca. ${readingMinutes(verses)} Min. Lesezeit`),
     ),
-    body,
+    extLink(bibleAppUrl(day.book, day.ref), `In der Bibel App lesen · ${BIBLE_APP.abbr}`, { class: 'btn btn-primary btn-wide' }),
+    h('p', { class: 'hint' }, `Öffnet die Bibel App an dieser Stelle in der «${BIBLE_APP.name}». Ohne installierte App öffnet sich bible.com.`),
     h(
-      'footer',
-      { class: 'scripture-foot' },
-      extLink(bibleServerUrl(day.ref, ctx.state.linkTranslation), `In der Übersetzung «${linkName}» lesen`),
+      'details',
+      {
+        class: 'more scripture-details',
+        open: ctx.state.showText,
+        ontoggle: (e) => ctx.saveQuietly((s) => { s.showText = e.target.open; }),
+      },
+      h('summary', {}, `Text hier lesen (${translation.short})`),
+      body,
     ),
   );
 }
@@ -70,7 +76,7 @@ export function renderToday(ctx) {
   const date = dateFor(ctx.state.start, n);
   const doneOn = ctx.state.done[n];
   const book = ctx.plan.books[day.book];
-  const verseText = ctx.text.verses[day.id];
+  const verseText = ctx.verseText(day);
 
   const noteField = h('textarea', {
     id: `note-${n}`,
@@ -142,8 +148,13 @@ export function renderToday(ctx) {
       { class: 'card versecard' },
       h('p', { class: 'eyebrow' }, 'Lernvers des Tages'),
       h('blockquote', {}, verseText),
-      h('p', { class: 'cite' }, day.verse.ref),
-      h('button', { class: 'btn', type: 'button', onclick: () => ctx.openVerse(index) }, 'Vers lernen'),
+      h('p', { class: 'cite' }, `${day.verse.ref} · ${ctx.verseSource(day)}`),
+      h(
+        'div',
+        { class: 'row' },
+        h('button', { class: 'btn', type: 'button', onclick: () => ctx.openVerse(index) }, 'Vers lernen'),
+        extLink(bibleAppUrl(day.verse.key.split(' ')[0], day.verse.ref), `In der Bibel App · ${BIBLE_APP.abbr}`, { class: 'linkbtn' }),
+      ),
     ),
 
     h(

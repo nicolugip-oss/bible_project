@@ -2,12 +2,13 @@
 // Strategie: sofort aus dem Zwischenspeicher antworten und im Hintergrund auffrischen.
 // Eine neue Version der App ist damit beim übernächsten Öffnen sichtbar.
 
-const CACHE = 'manna-v2';
+const CACHE = 'manna-v3';
 const CORE = [
   './',
   'index.html',
   'css/app.css',
   'js/app.js',
+  'js/lib/bibleapp.js',
   'js/lib/dates.js',
   'js/lib/dom.js',
   'js/lib/icf.js',

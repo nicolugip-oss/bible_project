@@ -3,7 +3,7 @@
 import { h } from '../lib/dom.js';
 import { formatShort, isISODate, streak } from '../lib/dates.js';
 import { status } from '../lib/memory.js';
-import { LINK_TRANSLATIONS } from '../lib/plan.js';
+import { BIBLE_APP } from '../lib/bibleapp.js';
 import { exportText, importText } from '../lib/store.js';
 
 function stat(value, label) {
@@ -51,11 +51,6 @@ function settings(ctx) {
     'select',
     { id: 'set-translation', onchange: (e) => ctx.setTranslation(e.target.value) },
     Object.entries(ctx.plan.translations).map(([slug, t]) => h('option', { value: slug, selected: slug === ctx.state.translation }, t.name)),
-  );
-  const link = h(
-    'select',
-    { id: 'set-link', onchange: (e) => ctx.update((s) => { s.linkTranslation = e.target.value; }) },
-    LINK_TRANSLATIONS.map((t) => h('option', { value: t.code, selected: t.code === ctx.state.linkTranslation }, t.name)),
   );
   const start = h('input', {
     id: 'set-start',
@@ -117,8 +112,7 @@ function settings(ctx) {
     h(
       'div',
       { class: 'block-body settings' },
-      field('set-translation', 'Bibeltext in der App', translation, 'Beide Übersetzungen sind gemeinfrei und deshalb direkt in der App enthalten.'),
-      field('set-link', 'Moderne Übersetzung für Links', link, 'Unter jedem Bibeltext führt ein Link zu dieser Übersetzung auf BibleServer.'),
+      field('set-translation', 'Bibeltext in der App', translation, `Diese beiden Übersetzungen sind gemeinfrei und deshalb in der App enthalten. Die «${BIBLE_APP.name}» ist urheberrechtlich geschützt: Du liest sie über den Link in der Bibel App und kannst Lernverse von dort einfügen.`),
       field('set-start', 'Startdatum des Leseplans', start, 'An diesem Datum war oder ist Tag 1.'),
       h(
         'div',
@@ -196,7 +190,8 @@ export function renderPath(ctx) {
       h(
         'div',
         { class: 'block-body' },
-        h('p', {}, 'Bibeltexte: Lutherbibel 1912 und Elberfelder 1905, beide gemeinfrei. Die Texte stammen aus freien Digitalisaten und können vereinzelt Tippfehler enthalten.'),
+        h('p', {}, 'Bibeltexte in der App: Lutherbibel 1912 und Elberfelder 1905, beide gemeinfrei. Die Texte stammen aus freien Digitalisaten und können vereinzelt Tippfehler enthalten.'),
+        h('p', {}, `Die Links in die Bibel App führen zur «${BIBLE_APP.name}» bei YouVersion. Verse, die du von dort einfügst, bleiben auf deinem Gerät.`),
         h('p', {}, 'Die Erklärungen und Gedankenanstösse sind eine Lesehilfe. Sie ersetzen weder das eigene Lesen noch das Gespräch in deiner Smallgroup.'),
         ctx.storageOk === false && h('p', { class: 'warn' }, 'Dieser Browser speichert den Fortschritt gerade nicht (zum Beispiel im privaten Modus).'),
       ),

@@ -418,9 +418,39 @@ button.dot {
   font-variant-numeric: tabular-nums;
 }
 
-.scripture-foot {
+.scripture-details summary {
+  font-size: 0.95rem;
+}
+
+.scripture-details[open] summary {
+  margin-bottom: 0.85rem;
+}
+
+.scripture-details .scripture-text {
+  color: var(--ink);
+}
+
+.btn .icon {
+  margin-left: 0;
+}
+
+.linkbtn .icon {
+  margin-left: 0;
+}
+
+.editor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+
+.editor > label {
   font-family: var(--font-ui);
-  font-size: 0.9rem;
+  font-weight: 700;
+  font-size: 0.98rem;
 }
 
 a .icon {

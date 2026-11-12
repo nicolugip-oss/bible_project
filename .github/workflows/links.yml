@@ -1,0 +1,21 @@
+name: Links prüfen
+
+# Von Hand zu starten: prüft stichprobenartig die Links in die Bibel App und zu ICF Zürich.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Links prüfen
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - run: node scripts/check-links.mjs

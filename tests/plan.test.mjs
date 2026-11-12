@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { bibleServerUrl, dayNumber, entryFor, flattenPlan, icfSearchUrl, readingMinutes } from '../js/lib/plan.js';
+import { dayNumber, entryFor, flattenPlan, icfSearchUrl, readingMinutes } from '../js/lib/plan.js';
 
 const plan = JSON.parse(await readFile(new URL('../data/plan.json', import.meta.url), 'utf8'));
 const days = flattenPlan(plan);
@@ -42,11 +42,6 @@ test('jeder Tag hat Text und Lernvers in allen Übersetzungen', async () => {
 test('Lernverse sind eindeutig', () => {
   const keys = days.map((d) => d.verse.key);
   assert.equal(new Set(keys).size, keys.length);
-});
-
-test('bibleServerUrl', () => {
-  assert.equal(bibleServerUrl('1. Johannes 4,7-19', 'HFA'), 'https://www.bibleserver.com/HFA/1.Johannes4%2C7-19');
-  assert.equal(bibleServerUrl('Psalm 23', 'NGÜ'), 'https://www.bibleserver.com/NG%C3%9C/Psalm23');
 });
 
 test('icfSearchUrl', () => {

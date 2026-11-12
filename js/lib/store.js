@@ -9,12 +9,13 @@ export function defaults(today) {
     v: 1,
     start: today,
     translation: 'luth1912',
-    linkTranslation: 'HFA',
+    showText: false, // Bibeltext in der App aufgeklappt?
     done: {}, // laufende Tagesnummer -> Datum, an dem gelesen wurde
     active: {}, // Datum -> true, sobald an dem Tag gelesen oder geübt wurde
     notes: {}, // laufende Tagesnummer -> Text
     verses: {}, // Vers-Schlüssel -> Lernstand
     sermon: {}, // Kalenderwoche -> Predigtnotiz
+    custom: {}, // Vers-Schlüssel -> selbst eingefügter Wortlaut (z. B. aus der Hoffnung für alle)
   };
 }
 
@@ -25,10 +26,11 @@ export function sanitize(raw, today) {
   const out = { ...base };
   if (isISODate(raw.start)) out.start = raw.start;
   if (typeof raw.translation === 'string') out.translation = raw.translation;
-  if (typeof raw.linkTranslation === 'string') out.linkTranslation = raw.linkTranslation;
-  for (const key of ['done', 'active', 'notes', 'verses', 'sermon']) {
+  if (typeof raw.showText === 'boolean') out.showText = raw.showText;
+  for (const key of ['done', 'active', 'notes', 'verses', 'sermon', 'custom']) {
     if (raw[key] && typeof raw[key] === 'object' && !Array.isArray(raw[key])) out[key] = raw[key];
   }
+  out.custom = Object.fromEntries(Object.entries(out.custom).filter(([, text]) => typeof text === 'string' && text.trim()));
   return out;
 }
 
