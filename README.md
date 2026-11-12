@@ -9,17 +9,20 @@ Home-Bildschirm ablegen und funktioniert nach dem ersten Öffnen auch ohne Netz.
 
 ## Was die App kann
 
-**Heute** – Die Bibelstelle des Tages zum Lesen direkt in der App, mit
+**Heute** – Die Bibelstelle des Tages. Ein Link öffnet die Bibel App (YouVersion) genau an dieser
+Stelle in der «Hoffnung für alle»; der Text in der Lutherbibel 1912 lässt sich in der App
+aufklappen. Dazu gibt es
 
-- Hintergrund (Zeit, Kultur, Wortbedeutungen) und einer Kurzeinführung ins jeweilige Buch,
+- Hintergrund (Zeit, Kultur, Wortbedeutungen) und eine Kurzeinführung ins jeweilige Buch,
 - Kontext (was davor und danach steht),
-- Kerngedanke, zwei Fragen zum Weiterdenken, einem konkreten Schritt für den Tag und einem Gebet,
-- einem Feld für eigene Notizen und einem Link zur Stelle in einer modernen Übersetzung.
+- Kerngedanke, zwei Fragen zum Weiterdenken, einen konkreten Schritt für den Tag und ein Gebet,
+- ein Feld für eigene Notizen.
 
 **Lernvers** – Ein Vers pro Tag, passend zur Bibelstelle. Geübt wird in fünf Stufen: Lesen,
 Lückentext (drei Schwierigkeiten), Anfangsbuchstaben, Auswendig aufsagen, Eintippen mit Prüfung.
 Nach deiner Einschätzung («Noch nicht», «Fast», «Sitzt») kommt der Vers in wachsenden Abständen
-zur Wiederholung zurück (1, 2, 4, 7, 14, 30, 60, 120 Tage).
+zur Wiederholung zurück (1, 2, 4, 7, 14, 30, 60, 120 Tage). Wer in der «Hoffnung für alle» lernen
+will, öffnet den Vers in der Bibel App, kopiert ihn und fügt ihn im Trainer ein.
 
 **ICF** – Die aktuelle Predigt von ICF Zürich mit Serie und Kurzbeschreibung, zum Anhören oder
 Ansehen direkt in der App. Dazu frühere Predigten, die neuesten Videos vom YouTube-Kanal, eine
@@ -77,7 +80,7 @@ prüft Datumslogik, Lerntrainer, Leseplan und Datenaufbereitung.
 | `content/books.json` | Kurzeinführungen in die biblischen Bücher |
 | `content/icf.json` | Kanal und Links von ICF Zürich |
 | `data/` | daraus erzeugte Dateien, die die App lädt |
-| `scripts/` | Datenaufbereitung, Videoabruf, lokaler Server |
+| `scripts/` | Datenaufbereitung, Abruf der Predigten, Link-Prüfung, lokaler Server |
 | `tests/` | automatische Tests |
 
 ## Leseplan erweitern
@@ -122,9 +125,13 @@ Abschnitte ausgegeben. Das Skript bricht ab, wenn ein Feld fehlt oder eine Stell
   [midvash/bible-data](https://github.com/midvash/bible-data) und werden beim Aufbereiten einmalig
   geladen. Die Digitalisate enthalten vereinzelt Tippfehler; die gefundenen sind in
   `scripts/build-data.mjs` (`SOURCE_FIXES`) korrigiert.
-- Moderne Übersetzungen (Hoffnung für alle, Luther 2017, Neue Genfer Übersetzung, Zürcher Bibel
-  und weitere) sind urheberrechtlich geschützt. Sie sind deshalb nicht enthalten, sondern pro
-  Bibelstelle auf [BibleServer](https://www.bibleserver.com) verlinkt.
+- Die **Hoffnung für alle** ist urheberrechtlich geschützt (Biblica, herausgegeben vom
+  Fontis-Verlag Basel) und deshalb nicht im Repository enthalten. Jede Bibelstelle und jeder
+  Lernvers ist stattdessen auf [bible.com](https://www.bible.com/bible/73/JHN.3.16.HFA) verlinkt;
+  mit installierter Bibel App öffnet sich die App an dieser Stelle. Verse, die du von dort in den
+  Trainer einfügst, werden nur auf deinem Gerät gespeichert.
+- Für den Abdruck ganzer Abschnitte in der App bräuchte es eine Genehmigung des Verlags
+  (info@fontis-verlag.ch).
 - Die Erklärungen, Fragen und Gebete sind für diese App geschrieben. Sie sind eine Lesehilfe und
   ersetzen weder das eigene Lesen noch das Gespräch in der Smallgroup.
 
